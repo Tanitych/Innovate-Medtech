@@ -180,13 +180,13 @@
 .swiper-container-rtl .swiper-button-next {
 }
 .swiper-button-prev:hover:after {
-  content: url(/img/icons/slider/arrow-left-blue.svg);
+  content: url(../img/icons/slider/arrow-left-blue.svg);
   transform: rotate(180deg);
   width: 60px;
   height: 60px;
 }
 .swiper-button-next:hover:after {
-  content: url(/img/icons/slider/arrow-left-blue.svg);
+  content: url(../img/icons/slider/arrow-left-blue.svg);
   transform: unset;
   width: 60px;
   height: 60px;

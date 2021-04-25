@@ -135,6 +135,7 @@ h6 {
 
 .header__logo {
   flex: 0 0 250px;
+  max-height: 40px;
   overflow: hidden;
   position: relative;
   z-index: 3;
@@ -874,6 +875,9 @@ h6 {
 }
 .partners {
   padding: 0px 0px 70px 0px;
+  @media (max-width: 768px) {
+    padding: 0px 0px 20px 0px;
+  }
 }
 
 .partners__block {
@@ -919,6 +923,7 @@ h6 {
 .partners__item {
   overflow: hidden;
   max-width: 190px;
+  max-height: 100px;
   transition: all ease 0.3s;
   @media (max-width: 600px) {
     max-width: 125px;
@@ -939,12 +944,14 @@ footer {
   .container {
     max-width: 1480px;
     padding: 35px 10px 35px 10px;
+    @media (max-width: 768px) {
+      padding: 25px 10px 10px 10px;
+    }
   }
 }
 .footer {
   background: #dfeef2;
   border-radius: 6px;
-
   .container {
     max-width: 1420px;
   }
@@ -952,6 +959,9 @@ footer {
 .footer__content {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .footer__left {
@@ -964,11 +974,23 @@ footer {
     @media (max-width: 991px) {
       margin-bottom: 25px;
     }
+    @media (max-width: 768px) {
+      margin-bottom: 8px;
+      margin-right: unset !important;
+    }
   }
-  img {
+  .img {
     max-width: 315px;
-    margin-bottom: 24px;
+    max-height: 50px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    display: block;
+    img {
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
   }
+
   .text {
     span {
       font-weight: normal;
@@ -991,12 +1013,13 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   height: fit-content;
+  margin-bottom: 10px;
   .item {
     display: block;
     margin-top: 7px;
     margin-right: 9px;
     width: fit-content;
-    height: fit-content;
+    height: 36px;
     img {
       max-width: 37px;
     }
@@ -1012,7 +1035,9 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
-
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
     span {
       font-weight: normal;
       font-size: 18px;
@@ -1032,7 +1057,6 @@ footer {
   .down {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
     span {
       font-weight: normal;
       font-size: 18px;
