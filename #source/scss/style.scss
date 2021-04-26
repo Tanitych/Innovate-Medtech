@@ -1112,7 +1112,7 @@ footer {
   transition: all ease 0.3s;
   margin-top: 24px;
   &:hover {
-    transform: translateX(-10px);
+    transform: translateX(-7px);
   }
   @media (max-width: 768px) {
     margin-top: 5px;
@@ -1179,5 +1179,47 @@ footer {
     @media (max-width: 7468px) {
       margin-bottom: 15px;
     }
+  }
+}
+
+//registration__header
+
+.registration__header {
+  position: fixed;
+  width: 100%;
+}
+
+.registration__header__container {
+  margin: 0px auto;
+  max-width: 1420px;
+  padding: 0px 0px;
+}
+.registration__header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+  }
+  .back__btn {
+    margin-top: 0px;
+  }
+}
+
+.registration__header__menu {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 6px;
+  .header__list {
+  }
+  .header__link {
+  }
+  .language__btn {
+  }
+  .lang__item {
   }
 }
