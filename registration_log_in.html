@@ -23,13 +23,13 @@
     <header class="registration__header">
   <div class="registration__header__container">
     <div class="registration__header__body">
-      <div class="left">
+      <!-- <div class="left">
         <a href="" class="back__btn"> Назад </a>
         <a href="index.html" class="logo">
-          <img src="img/logos/header/Header_Logo_Medtech.svg" alt="" />
+          <img clas src="img/logos/header/Header_Logo_Medtech.svg" alt="" />
         </a>
-      </div>
-      <nav class="registration__header__menu">
+      </div> -->
+      <nav class="header__menu">
         <ul class="header__list">
           <li>
             <a href="#services" class="header__link">Услуги</a>
@@ -53,6 +53,9 @@
           <a class="lang__item" href="">Eng</a>
         </div>
       </nav>
+      <div class="header__burger">
+        <span></span>
+      </div>
     </div>
   </div>
 </header>
@@ -62,18 +65,41 @@
       <div class="container">
         <div class="registration__container">
           <div class="left">
-            <h3 class="registration__title">Войдите в личный кабинет</h3>
-            <div class="link">
-              <p>или</p>
-              <a href="">создайте новый</a>
+            <a href="" class="back__btn"> Назад </a>
+            <div class="left__block">
+              <a target="__blank" class="registration__logo" href="index.html">
+                <img src="img/logos/header/Header_Logo_Medtech.svg" alt=""
+              /></a>
+
+              <div class="registration__content">
+                <h3 class="registration__title">Войдите в личный кабинет</h3>
+                <div class="link">
+                  <p>или</p>
+                  <a href="">создайте новый</a>
+                </div>
+                <form action="" class="registration__form">
+                  <label for="">
+                    <p class="placeholder_text">Введите Ваш e-mail</p>
+                    <input required class="email" type="email"
+                  /></label>
+
+                  <input
+                    required
+                    placeholder="Введите пароль"
+                    class="password"
+                    type="password"
+                  />
+                  <button class="login__btn">Войти</button>
+                  <a class="forget__link" href="">Я забыл пароль</a>
+                </form>
+              </div>
             </div>
-            <form action="" class="registration__form">
-              <input class="email" type="email" />
-              <input class="password" type="password" />
-            </form>
           </div>
+
           <div class="right">
-            <img src="img/registration__page/surgery.jpg" alt="surgery" />
+            <div class="img">
+              <img src="img/registration__page/surgery.jpg" alt="surgery" />
+            </div>
           </div>
         </div>
       </div>
