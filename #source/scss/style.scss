@@ -40,6 +40,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 input,
 button,
@@ -110,7 +111,6 @@ h6 {
   top: 0;
   left: 0;
   z-index: 50;
-  background-color: #dfeef2;
   padding: 10px 10px;
 }
 
@@ -1071,6 +1071,113 @@ footer {
       @media (max-width: 991px) {
         font-size: 29px;
       }
+    }
+  }
+}
+
+//static_page
+
+.static__page {
+  padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 90px;
+  }
+  .container {
+    max-width: 1180px;
+  }
+  .news__block__title {
+    font-size: 36px;
+  }
+  .news__block {
+    @media (max-width: 768px) {
+      padding: 0px 0px 30px 0px;
+    }
+  }
+}
+
+.back__btn {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6f7893;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding: 0px 0px 0px 30px;
+  background: url(../img/icons/static__page/back_btn.svg) no-repeat;
+  background-position: center;
+  transition: all ease 0.3s;
+  margin-top: 24px;
+  &:hover {
+    transform: translateX(-10px);
+  }
+  @media (max-width: 768px) {
+    margin-top: 5px;
+  }
+}
+
+.static__page__content {
+  margin: 40px 0px 0px 0px;
+  @media (max-width: 768px) {
+    margin: 15px 0px 0px 0px;
+  }
+  .img {
+    max-width: 1140px;
+    max-height: 405px;
+    min-height: 150px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    @media (max-width: 420px) {
+      margin-bottom: 14px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      min-height: 150px;
+    }
+  }
+}
+.static__page__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #3c3f42;
+  margin: 0px 0px 40px 130px;
+  @media (max-width: 991px) {
+    margin: 0px 0px 25px 0px;
+    line-height: 44px;
+  }
+  @media (max-width: 768px) {
+    font-size: 44px;
+  }
+  @media (max-width: 420px) {
+    font-size: 35px;
+    margin: 0px 0px 17px 0px;
+  }
+}
+
+.static__page__text {
+  margin-bottom: 40px;
+  .text__container {
+    max-width: 796px;
+    border-bottom: 1px solid rgba(185, 194, 207, 0.4);
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3c3f42;
+    margin-bottom: 27px;
+    @media (max-width: 7468px) {
+      margin-bottom: 15px;
     }
   }
 }
