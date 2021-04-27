@@ -72,12 +72,12 @@
             <div class="registration__dots__block">
               <ul>
                 <li>
-                  <a href="registration_role.html" class="dots__item active"
-                    >•</a
-                  >
+                  <a href="registration_role.html" class="dots__item">•</a>
                 </li>
                 <li>
-                  <a href="pacient_regist_fill_data.html" class="dots__item"
+                  <a
+                    href="pacient_regist_fill_data.html"
+                    class="dots__item active"
                     >•</a
                   >
                 </li>
@@ -89,20 +89,51 @@
             <a href="index.html" class="regitration__logo">
               <img src="img/logos/header/Header_Logo_Medtech.svg" alt="" />
             </a>
-            <!-- <p class="create___acc">Создание аккаунта</p> -->
+            <!-- <p class="create___acc">Создание аккаунта для пациента</p> -->
             <form action="" class="registration__form role">
               <div class="registration__form__content">
-                <p class="create___acc">Создание аккаунта</p>
+                <p class="create___acc">Создание аккаунта для пациента</p>
                 <h3 class="registration__form__title add_margin">
-                  Выберите Вашу роль на платформе
+                  Заполните ваши данные
                 </h3>
                 <div class="buttons__block">
-                  <a
-                    href="pacient_regist_fill_data.html"
-                    class="pacient__btn active"
-                    >Я - пациент</a
-                  >
-                  <a href="" class="doctor__btn">Я - Врач</a>
+                  <div class="custom__placeholder">
+                    <p class="placeholder__text">Введите ваш e-mail</p>
+                    <input class="custom__input" required type="email" />
+                  </div>
+                  <div class="custom__placeholder">
+                    <p class="placeholder__text">Придумайте пароль</p>
+                    <input
+                      id="password_input"
+                      class="custom__input"
+                      required
+                      type="password"
+                    />
+                    <div
+                      class="eye__icon"
+                      onclick="return show_hide_password(this);"
+                    >
+                      <img
+                        src="img/icons/registration/eye_show.svg"
+                        alt=""
+                        class="img"
+                      />
+                    </div>
+
+                    <input
+                      required
+                      type="password"
+                      placeholder="Введите пароль"
+                    />
+                    <a href="" class="next__link">
+                      <img
+                        class="eye__img"
+                        src="img/icons/registration/arrow__down.svg"
+                        alt=""
+                      />
+                      Дальше</a
+                    >
+                  </div>
                 </div>
               </div>
             </form>

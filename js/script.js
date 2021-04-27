@@ -1,5 +1,4 @@
 //menu__burger
-
 $(document).ready(function () {
     $('.header__burger, .header__link').click(function (event) {
         $('.header__burger,.header__menu,.registration__header__menu').toggleClass('active');
@@ -113,3 +112,18 @@ const news__slider = new Swiper('.news__slider', {
         },
     }
 });
+
+
+//show password
+
+function show_hide_password(target) {
+    var input = document.getElementById('password_input');
+    if (input.getAttribute('type') == 'password') {
+        target.classList.add('view');
+        input.setAttribute('type', 'text');
+    } else {
+        target.classList.remove('view');
+        input.setAttribute('type', 'password');
+    }
+    return false;
+}
