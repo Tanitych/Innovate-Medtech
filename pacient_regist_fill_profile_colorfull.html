@@ -75,17 +75,11 @@
                   <a href="registration_role.html" class="dots__item">•</a>
                 </li>
                 <li>
-                  <a
-                    href="pacient_regist_fill_data.html"
-                    class="dots__item active"
+                  <a href="pacient_regist_fill_data.html" class="dots__item"
                     >•</a
                   >
                 </li>
-                <li>
-                  <a href="pacient_regist_fill_profile.html" class="dots__item"
-                    >•</a
-                  >
-                </li>
+                <li><a href="" class="dots__item active">•</a></li>
               </ul>
             </div>
           </div>
@@ -100,45 +94,33 @@
                   Создание аккаунта для пациента
                 </p>
                 <h3 class="registration__form__title add_margin">
-                  Заполните ваши данные
+                  Заполните ваш профиль
                 </h3>
+                <div class="img__avatar__body">
+                  <div class="img__avatar_block">
+                    <img
+                      src="img/pacient_regist_fill_profile/fool_avatar.jpg"
+                      alt=""
+                      class="avatar_img"
+                    />
+                  </div>
+                </div>
                 <div class="buttons__block">
                   <div class="custom__placeholder">
-                    <p class="placeholder__text">Введите ваш e-mail</p>
-                    <input class="custom__input" required type="email" />
+                    <p class="placeholder__text">Ваш Ф.И.О</p>
+                    <input class="custom__input" required type="text" />
                   </div>
                   <div class="custom__placeholder">
-                    <p class="placeholder__text">Придумайте пароль</p>
+                    <p class="placeholder__text">Ваш номер телефона</p>
                     <input
-                      id="password_input"
                       class="custom__input"
+                      id="phone"
                       required
-                      type="password"
+                      type="tel"
                     />
-                    <div
-                      class="eye__icon"
-                      onclick="return show_hide_password(this);"
-                    >
-                      <img
-                        src="img/icons/registration/eye_show.svg"
-                        alt=""
-                        class="img"
-                      />
-                    </div>
                   </div>
-                  <input
-                    required
-                    type="password"
-                    placeholder="Введите пароль"
-                  />
-                  <a href="pacient_regist_fill_profile.html" class="next__link">
-                    <img
-                      class="eye__img"
-                      src="img/icons/registration/arrow__down.svg"
-                      alt=""
-                    />
-                    Дальше</a
-                  >
+
+                  <button class="next__link">Сохранить</button>
                 </div>
               </div>
             </form>
@@ -155,6 +137,7 @@
     <script src="js/jq/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
