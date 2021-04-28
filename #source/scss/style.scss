@@ -1200,6 +1200,11 @@ footer {
 
 //registration__header
 
+.registration {
+  &.add_height {
+    height: 1180px;
+  }
+}
 .registration__header {
   position: absolute;
   width: 100%;
@@ -1840,13 +1845,15 @@ footer {
   font-size: 18px;
   line-height: 120%;
   color: #3c3f42;
+  scrollbar-color: #aeaeae #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
   &::-webkit-scrollbar {
     width: 3px;
     height: 5px;
     background-color: #ffffff;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
+    background-color: #aeaeae;
   }
 }
 
@@ -1963,13 +1970,10 @@ footer {
   pointer-events: none;
   z-index: 4;
   min-width: 117px;
-}
-.custom-select.open .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  max-height: 300px;
+  max-height: 220px;
   overflow-x: scroll;
+  scrollbar-color: #aeaeae #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
   &::-webkit-scrollbar {
     width: 3px;
     height: 5px;
@@ -1979,6 +1983,11 @@ footer {
     background-color: #aeaeae;
     border-radius: 2px;
   }
+}
+.custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 .custom-option {
   position: relative;
@@ -2059,4 +2068,67 @@ footer {
 
 .custom__cost[type="number"] {
   -moz-appearance: textfield;
+}
+
+//pacient__profile
+
+.pacient__profile {
+  padding: 130px 0px 0px 0px;
+}
+
+//tabs
+
+.tabs {
+}
+.tabs__nav {
+  display: flex;
+  align-items: center;
+}
+.tabs__nav__btn {
+  background-color: unset;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #6f7893;
+  margin-right: 40px;
+  transition: all ease 0.3s;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: #4493f2;
+    height: 4px;
+    left: 50%;
+    bottom: -11px;
+    border-radius: 8px 8px 0px 0px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+  }
+  // &:hover:after {
+  //   width: 100%;
+  //   left: 0;
+  // }
+  &:hover {
+    color: #3c3f42;
+  }
+  &.active:after {
+    background-color: #4493f2;
+    width: 100%;
+    left: 0;
+  }
+  &.active {
+    color: #3c3f42;
+  }
+}
+
+.tabs__content {
+}
+.tabs__item {
+  display: none;
+  &.active {
+    display: block;
+  }
 }

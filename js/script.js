@@ -151,7 +151,6 @@ for (const option of document.querySelectorAll(".custom-option")) {
     })
 };
 
-
 window.addEventListener('click', function (e) {
     for (const select of document.querySelectorAll('.custom-select')) {
         if (!select.contains(e.target)) {
@@ -159,3 +158,31 @@ window.addEventListener('click', function (e) {
         }
     }
 });
+
+//tabs
+
+const tabsBtn = document.querySelectorAll(".tabs__nav__btn");
+const tabsItems = document.querySelectorAll(".tabs__item");
+
+tabsBtn.forEach(function (item) {
+    item.addEventListener("click", function () {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if (!currentBtn.classList.contains("active")) {
+            tabsBtn.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            tabsItems.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            currentBtn.classList.add("active");
+            currentTab.classList.add("active");
+        }
+    });
+});
+
+document.querySelector('.tabs__nav__btn').click();
