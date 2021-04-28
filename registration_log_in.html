@@ -72,7 +72,7 @@
             <a href="index.html" class="regitration__logo">
               <img src="img/logos/header/Header_Logo_Medtech.svg" alt="" />
             </a>
-            <form action="" class="registration__form">
+            <form action="" class="registration__form role">
               <div class="registration__form__content">
                 <h3 class="registration__form__title">
                   Войдите в личный кабинет
@@ -80,13 +80,29 @@
                 <a href="registration_role.html" class="link">
                   <span>или</span> создайте новый</a
                 >
-                <div class="custom__placeholder">
-                  <p class="placeholder__text">Введите ваш e-mail</p>
-                  <input class="custom__input" required type="email" />
+                <div class="buttons__block">
+                  <label for="email" class="custom__placeholder">
+                    <p class="placeholder__text">Введите ваш e-mail</p>
+                    <input
+                      id="email"
+                      class="custom__input"
+                      required
+                      type="email"
+                    />
+                  </label>
+
+                  <input
+                    required
+                    type="password"
+                    placeholder="Введите пароль"
+                  />
+                  <button class="regist__btn">Войти</button>
+                  <a
+                    href="reset_the_password_mail.html"
+                    class="forgot__password"
+                    >Я забыл пароль</a
+                  >
                 </div>
-                <input required type="password" placeholder="Введите пароль" />
-                <button class="regist__btn">Войти</button>
-                <a href="" class="forgot__password">Я забыл пароль</a>
               </div>
             </form>
           </div>

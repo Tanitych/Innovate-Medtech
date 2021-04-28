@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovative Medtech</title>
+    <link rel="shortcut icon" href="img/icons/favicon.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- @import "registration_header.html" -->
+
+    <div class="registration">
+      <div class="container">
+        <div class="registration__container dots">
+          <div class="registration__dots">
+            <div class="registration__dots__block">
+              <ul>
+                <li>
+                  <a href="registration_role.html" class="dots__item">•</a>
+                </li>
+                <li>
+                  <a href="doctor_regist_fill_data.html" class="dots__item"
+                    >•</a
+                  >
+                </li>
+                <li><a href="" class="dots__item active">•</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="registration__left">
+            <a href="index.html" class="regitration__logo">
+              <img src="img/logos/header/Header_Logo_Medtech.svg" alt="" />
+            </a>
+            <!-- <p class="create___acc">Создание аккаунта для врача</p> -->
+            <form
+              action="pacient_regist_fill_profile_colorfull.html"
+              class="registration__form role"
+            >
+              <div class="registration__form__content">
+                <p class="create___acc mb_less">Создание аккаунта для врача</p>
+                <h3 class="registration__form__title add_margin">
+                  Заполните ваш профиль
+                </h3>
+                <div class="img__avatar__body">
+                  <div class="img__avatar_block">
+                    <img
+                      src="img/doctor_regist_fill_profile/avatar.jpg"
+                      alt="avatar"
+                      class="avatar_img"
+                    />
+                  </div>
+                </div>
+                <div class="buttons__block">
+                  <label for="FIO" class="custom__placeholder">
+                    <p class="placeholder__text">Ваш Ф.И.О</p>
+                    <input
+                      id="FIO"
+                      class="custom__input"
+                      required
+                      type="text"
+                    />
+                  </label>
+
+                  <label for="about" class="custom__placeholder textarea">
+                    <p class="placeholder__text">Расскажите о себе</p>
+                    <textarea
+                      required
+                      class="custom__textarea"
+                      name=""
+                      id="about"
+                    ></textarea>
+                  </label>
+                  <label
+                    for="work_place"
+                    class="custom__placeholder work__place"
+                  >
+                    <p class="placeholder__text">Укажите место работы</p>
+                    <textarea
+                      required
+                      class="custom__textarea"
+                      name=""
+                      id="work_place"
+                    ></textarea>
+                  </label>
+                  <div class="select__cost">
+                    <div class="select__block">
+                      <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                          <p class="placeholder">Укажите Вашу специальность</p>
+                          <div class="custom-select__trigger">
+                            <span>Нейрохирург</span>
+                            <div class="arrow"></div>
+                          </div>
+                          <div class="custom-options">
+                            <span
+                              class="custom-option selected"
+                              data-value="tesla"
+                              >Нейрохирург</span
+                            >
+                            <span class="custom-option" data-value="volvo"
+                              >Кардиохирург</span
+                            >
+                            <span class="custom-option" data-value="mercedes"
+                              >Онколог</span
+                            >
+                            <span class="custom-option" data-value="mercedes"
+                              >Нейрохирург</span
+                            >
+                            <span class="custom-option" data-value="mercedes"
+                              >Онколог</span
+                            >
+                            <span class="custom-option" data-value="mercedes"
+                              >Онколог</span
+                            >
+                            <span class="custom-option" data-value="mercedes"
+                              >Нейрохирург</span
+                            >
+                            <span class="custom-option" data-value="mercedes"
+                              >Онколог</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <label for="cost" class="custom__placeholder cost">
+                      <p class="placeholder__text">Стоимость консультации</p>
+                      <input
+                        id="cost"
+                        class="custom__cost"
+                        required
+                        type="number"
+                      />
+                    </label>
+                  </div>
+                  <button class="next__link">Сохранить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="registration__right">
+            <div class="img">
+              <img src="img/registration__page/surgery.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
