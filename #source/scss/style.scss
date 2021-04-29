@@ -2429,3 +2429,123 @@ footer {
     font-size: 29px;
   }
 }
+
+//doctor tab item
+
+.search__doctor {
+  margin-bottom: 37px;
+}
+.search__block {
+  max-width: 932px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px rgba(116, 130, 142, 0.15);
+  padding: 40px 40px 25px 40px;
+}
+.info__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid rgba(185, 194, 207, 0.4);
+  border-radius: 6px;
+  padding: 0px 8px 0px 18px;
+  margin-bottom: 23px;
+  .loop {
+    cursor: pointer;
+  }
+
+  input {
+    height: 56px;
+    padding: 12px 0px 12px 18px;
+  }
+  .search__label {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 56px;
+  }
+
+  .search__input {
+    width: 100%;
+    font-size: 23px;
+    &::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 110%;
+      display: flex;
+      align-items: center;
+      color: #6f7893;
+    }
+  }
+  .calendar {
+  }
+  .find {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #64b5a6;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 8px 24px;
+    transition: all ease 0.3s;
+    &:hover {
+      background: #53978b;
+    }
+  }
+}
+
+.sort__block {
+  display: flex;
+  align-items: center;
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #3c3f42;
+    margin-right: 5px;
+  }
+}
+
+.doctors__variant {
+}
+.doctor__variant__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.avatar__img {
+  img {
+  }
+}
+.doctor__variant__content {
+  .name {
+  }
+  .speciality {
+  }
+  .work__place {
+  }
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.star__rates {
+}
+.full {
+}

@@ -185,4 +185,4 @@ tabsBtn.forEach(function (item) {
     });
 });
 
-document.querySelector('.tabs__nav__btn').click();
+document.querySelector('.tabs__nav__btn:nth-child(2)').click();
