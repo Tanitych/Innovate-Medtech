@@ -958,7 +958,6 @@ h6 {
 //footer
 
 footer {
-  background-color: #f6f6f6;
   .container {
     max-width: 1480px;
     padding: 35px 10px 10px 10px;
@@ -2179,7 +2178,7 @@ footer {
   padding-left: 95px;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 991px) {
+  @media (max-width: 1200px) {
     padding-left: 0;
   }
   @media (max-width: 960px) {
