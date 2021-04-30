@@ -186,3 +186,24 @@ tabsBtn.forEach(function (item) {
 });
 
 document.querySelector('.tabs__nav__btn:nth-child(2)').click();
+
+//dropdown
+
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+getElementsByTagName(body).onclick = function (event) {
+    if (!event.target.matches('.noty__btn')) {
+        var dropdowns = document.getElementsByClassName("noty__dropdown ");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
