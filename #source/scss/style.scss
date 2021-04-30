@@ -2953,3 +2953,12 @@ footer {
     }
   }
 }
+
+//records appear
+.records__appear__item {
+  width: 100%;
+}
+
+.records__body.appear {
+  justify-content: flex-start;
+}
