@@ -348,10 +348,18 @@ h6 {
   align-items: center;
   text-align: right;
   color: #ffffff;
-  padding: 10px 16px;
+  padding: 10px 15px 10px 15px;
   transition: all ease 0.3s;
   position: relative;
   z-index: 0;
+  p {
+    max-width: 138px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .logged__in__name {
+    margin-left: 8px;
+  }
   @media (max-width: 1200px) {
     padding: 10px 10px;
   }
@@ -1150,6 +1158,7 @@ footer {
   position: relative;
   z-index: 4;
   background-size: 100% 100%;
+  min-width: 100px;
   &:hover {
     color: #545c75;
   }
@@ -1394,24 +1403,6 @@ footer {
   position: relative;
 }
 .noty__dropdown {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  top: 50px;
-  background: #ffffff;
-  width: 260px;
-  box-shadow: 0px 0px 15px rgba(116, 130, 142, 0.15);
-  border-radius: 6px;
-  padding: 5px 4px 0px 4px;
-  &.show {
-    display: flex;
-  }
-  @media (max-width: 500px) {
-    right: -11px;
-  }
-  @media (max-width: 375px) {
-    right: -62px;
-  }
 }
 
 .noty__dropdown__item {
@@ -1470,6 +1461,9 @@ footer {
     margin-bottom: 7px;
     .load {
       color: #4493f2;
+      padding: unset;
+      text-decoration: unset;
+      display: unset;
     }
   }
 }
@@ -1613,6 +1607,7 @@ footer {
     border: 2px solid rgba(185, 194, 207, 0.4);
     height: 56px;
     overflow: hidden;
+    cursor: pointer;
     &:hover {
       border: 2px solid #64b5a6;
     }
@@ -2285,6 +2280,9 @@ footer {
 .tabs__content {
   margin-top: 22px;
   margin-right: 16px;
+  @media (max-width: 991px) {
+    margin-right: 0;
+  }
 }
 .tabs__item {
   display: none;
@@ -2513,6 +2511,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+
   @media (max-width: 767px) {
     margin-top: 24px;
   }
@@ -2654,6 +2653,14 @@ footer {
     color: #3c3f42;
     margin-right: 5px;
   }
+  .rate {
+    display: flex;
+    margin-right: 25px;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .doctors__variant {
@@ -2681,6 +2688,19 @@ footer {
   padding-right: 15px;
   width: 77%;
   margin-bottom: 10px;
+  .button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .img__inputs__block {
+    display: flex;
+    width: 100%;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   @media (max-width: 1200px) {
     width: 100%;
     border-right: unset;
@@ -2698,8 +2718,8 @@ footer {
   max-width: 140px;
   max-height: 140px;
   overflow: hidden;
-  min-width: 70px;
-  min-height: 70px;
+  min-width: 140px;
+  min-height: 140px;
   img {
     width: 100%;
     height: 100%;
@@ -2707,7 +2727,19 @@ footer {
     min-height: 140px;
   }
   @media (max-width: 550px) {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+  }
+  &.appear {
+    min-width: 70px;
+    min-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      min-width: 70px;
+      min-height: 70px;
+    }
   }
 }
 .doctor__variant__content {
@@ -2777,14 +2809,7 @@ footer {
     margin-bottom: 2px;
   }
 }
-.rate {
-  display: flex;
-  margin-right: 25px;
-}
-.price {
-  display: flex;
-  align-items: center;
-}
+
 .star__rates__content {
   display: flex;
   flex-wrap: nowrap;
@@ -2865,6 +2890,9 @@ footer {
 //info__doctor__profile
 .info__doctor__profile {
   padding: 130px 0px 40px 0px;
+  @media (max-width: 768px) {
+    padding-top: 96px;
+  }
   .doctors__info {
     width: 100%;
     border-right: unset;
@@ -2961,4 +2989,600 @@ footer {
 
 .records__body.appear {
   justify-content: flex-start;
+  margin-top: 10px;
+}
+
+//
+
+/* Dropdown Button */
+.dropbtn.noty {
+  cursor: pointer;
+  padding: 9px 12px;
+  transition: all ease 0.3s;
+  &:hover {
+    background: #dfeef2;
+    border-radius: 4px;
+  }
+  @media (max-width: 600px) {
+    padding: 5px 7px;
+  }
+  .svg {
+    position: relative;
+    pointer-events: none;
+    svg {
+      pointer-events: none;
+    }
+  }
+  .noty__dot {
+    position: absolute;
+    right: 2px;
+  }
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown.noty {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content.noty {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 50px;
+  background: #ffffff;
+  width: 260px;
+  box-shadow: 0px 0px 15px rgba(116, 130, 142, 0.15);
+  border-radius: 6px;
+  padding: 5px 4px 0px 4px;
+  max-height: 407px;
+  overflow: scroll;
+  scrollbar-color: #c1c1c1 #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    background-color: #ffffff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 4px;
+  }
+  &.show {
+    display: flex;
+  }
+  @media (max-width: 500px) {
+    right: -11px;
+  }
+  @media (max-width: 375px) {
+    right: -62px;
+  }
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: flex;
+}
+
+.doctor__variant__appear {
+  width: 71%;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 550px) {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .consult {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    .text {
+      margin: 0px 0px 0px 0px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+
+      /* Primary Gray */
+
+      color: #6f7893;
+    }
+    .star__rate__block {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  .name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    /* Primary Black */
+
+    color: #3c3f42;
+  }
+  .speciality {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    margin-bottom: 12px;
+    /* Primary Gray */
+
+    color: #6f7893;
+  }
+  .details__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .details__link {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+
+      /* Primary Brand */
+
+      color: #4493f2;
+    }
+    .price {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 133% */
+
+      color: #3c3f42;
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        margin-left: 3px;
+
+        color: #6f7893;
+      }
+    }
+  }
+}
+.avatar__img.appear {
+  max-width: 100px;
+  max-height: 100px;
+  img {
+    min-width: 70px;
+    min-height: 70px;
+  }
+}
+.doctor__schedule.appear {
+  justify-content: flex-start;
+  width: 37%;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+.record__time__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #3c3f42;
+  margin-bottom: 15px;
+}
+.record__time__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.record__time__block__text {
+  margin-left: 14px;
+  .date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6f7893;
+  }
+  .time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #3c3f42;
+  }
+}
+.time__block__appear {
+  display: flex;
+  align-items: center;
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: start;
+    margin: 0px 0px 0px 0px;
+    color: #4493f2;
+    margin-left: 9px;
+    &.consult__done {
+      color: #6f7893;
+    }
+  }
+}
+
+.doctors__info.appear {
+  padding-right: 2px;
+}
+
+//tab history
+
+.history__table {
+  padding: 16px 0px 4px 0px;
+  background: #ffffff;
+  border-radius: 6px;
+  @media (max-width: 700px) {
+    padding-top: 0;
+  }
+}
+table.history {
+  width: 100%;
+  border: 0px;
+  border-collapse: collapse;
+}
+table.history thead {
+  th {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: start;
+    color: #6f7893;
+    padding: 0px 3px 10px 3px;
+    &:nth-child(1) {
+      padding: 0px 3px 10px 15px;
+    }
+  }
+}
+
+table.history tbody tr {
+  &:nth-child(odd) {
+    background: #f8fdff;
+  }
+}
+table.history td {
+  padding: 12px 5px 12px 3px;
+  &:nth-child(1) {
+    padding: 11px 3px 11px 15px;
+    @media (max-width: 700px) {
+      padding: 11px 3px 16px 11px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 11px 11px 3px 11px;
+  }
+  @media (max-width: 370px) {
+    font-size: 15px !important;
+    padding: 5px 11px 4px 11px;
+  }
+  &.number {
+    color: #6f7893;
+    white-space: nowrap;
+    p {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  &.data {
+    color: #3c3f42;
+    white-space: nowrap;
+    @media (max-width: 700px) {
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: #3c3f42;
+    }
+  }
+  &.name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3c3f42;
+    @media (max-width: 700px) {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
+      color: #3c3f42;
+    }
+  }
+  &.speciality {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3c3f42;
+    white-space: nowrap;
+    @media (max-width: 700px) {
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: #3c3f42;
+    }
+  }
+  &.price {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    white-space: nowrap;
+    color: #6f7893;
+    padding-right: 10px;
+    @media (max-width: 700px) {
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      color: #3c3f42;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  table.history thead {
+    display: none;
+  }
+  table.history tr {
+    display: block;
+    margin-bottom: 5px;
+  }
+  table.history td {
+    display: block;
+    text-align: right;
+  }
+  table.history td:before {
+    content: attr(aria-label);
+    float: left;
+    margin-right: 10px;
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
+table.history td:before {
+  @media (max-width: 370px) {
+    font-size: 15px;
+  }
+}
+
+.edit__profile__inputs {
+  width: 79%;
+  margin-left: 30px;
+  @media (max-width: 650px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .up__input {
+    margin-bottom: 15px;
+  }
+  .down__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .custom__placeholder {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 12px;
+    transition: all ease 0.3s;
+    border-radius: 4px;
+    border: 2px solid rgba(185, 194, 207, 0.4);
+    height: 56px;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    &:hover {
+      border: 2px solid #64b5a6;
+    }
+    &:focus {
+      border: 2px solid #64b5a6;
+    }
+    &:active {
+      border: 2px solid #64b5a6;
+    }
+    .custom__input {
+      margin-bottom: 0;
+      width: 100%;
+      height: 100%;
+      padding: 23px 17px 8px 11px;
+    }
+    .placeholder__text {
+      position: absolute;
+      top: 0;
+      left: 11px;
+      font-size: 13px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      color: #6f7893;
+      width: 100%;
+      padding-top: 6px;
+      padding-bottom: 3px;
+    }
+    input {
+      border: none;
+      &:hover {
+        border: none;
+      }
+      &:focus {
+        border: none;
+      }
+      &:active {
+        border: none;
+      }
+    }
+  }
+}
+
+.save__button {
+  background: #4493f2;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #ffffff;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 127px;
+  letter-spacing: 1px;
+  transition: all ease 0.3s;
+  margin-bottom: 20px;
+  @media (max-width: 650px) {
+    max-width: unset;
+  }
+  &:hover {
+    background: #418ae4;
+  }
+  &:active {
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+}
+
+//
+.change__password {
+  .change__password__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #3c3f42;
+    margin-bottom: 7px;
+    margin-left: 18px;
+  }
+  .change__password__block {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 24px 24px 5px 24px;
+  }
+
+  .custom__placeholder {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-bottom: 12px;
+    transition: all ease 0.3s;
+    border-radius: 4px;
+    border: 2px solid rgba(185, 194, 207, 0.4);
+    height: 56px;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+    &:hover {
+      border: 2px solid #64b5a6;
+    }
+    &:focus {
+      border: 2px solid #64b5a6;
+    }
+    &:active {
+      border: 2px solid #64b5a6;
+    }
+    .custom__input {
+      margin-bottom: 0;
+      width: 100%;
+      height: 100%;
+      padding: 23px 17px 8px 11px;
+    }
+    .placeholder__text {
+      position: absolute;
+      top: 0;
+      left: 11px;
+      font-size: 13px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      color: #6f7893;
+      width: 100%;
+      padding-top: 6px;
+      padding-bottom: 3px;
+    }
+    input {
+      border: none;
+      &:hover {
+        border: none;
+      }
+      &:focus {
+        border: none;
+      }
+      &:active {
+        border: none;
+      }
+    }
+  }
+  .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+    .lonely__input {
+      border: 2px solid rgba(185, 194, 207, 0.4);
+      border-radius: 4px;
+      margin-bottom: 12px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #3c3f42;
+      padding: 14px 51px 14px 10px;
+      width: 100%;
+      transition: all ease 0.2s;
+      height: 56px;
+      &:hover {
+        border: 2px solid #64b5a6;
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .save__button {
+  }
+}
+.save__button.margin_del {
+  margin-bottom: 0;
+}
+
+.doctors__info.edit__prof {
+  flex-direction: column;
 }

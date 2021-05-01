@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #f6f6f6">
-    <!-- @import "header.html" -->
+    <!-- @import "header__logged__in.html" -->
 
     <div class="pacient__profile">
       <div class="container">
@@ -49,7 +49,11 @@
                       <h4 class="name">Азимханов Ануар</h4>
                       <p class="mail">anuar@mail.com</p>
                       <p class="phone">+7 701 612 80 70</p>
-                      <a href="" class="edit__profile">Редактировать профиль</a>
+                      <a
+                        href="pacient__edit__profile.html"
+                        class="edit__profile"
+                        >Редактировать профиль</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -491,7 +495,125 @@
                   <button class="download__more__btn">Загрузить еще</button>
                 </div>
               </div>
-              <div class="tabs__item" id="history">history</div>
+              <div class="tabs__item" id="history">
+                <div class="history__table">
+                  <table class="history">
+                    <thead>
+                      <tr>
+                        <th>№</th>
+                        <th>Дата консультации</th>
+                        <th>Ф.И.О врача</th>
+                        <th>Название консультации</th>
+                        <th>Сумма</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td aria-label="001." class="number"><p>001.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          12 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Константин Константинопольский
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Невропатология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="002." class="number">
+                          <p>002.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          11 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Marvin McKinney
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Хирургия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="003." class="number">
+                          <p>003.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          9 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Theresa Webb
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Психотерапия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="004." class="number"><p>004.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          7 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Savannah Nguyen
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Урология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="005." class="number"><p>005.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          14 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Bessie Cooper
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Терапия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="006." class="number">
+                          <p>006.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          3 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Wade Warren
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Невропатология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
           <div class="pacient__profile__subscribe__status">

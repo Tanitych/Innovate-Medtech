@@ -53,34 +53,236 @@
           </div>
         </nav>
 
-        <div class="notify__icon">
-          <a href="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M14.732 18.5908C14.7883 18.8081 14.8183 19.0372 14.8183 19.2726C14.8183 20.779 13.5965 21.9999 12.091 21.9999C10.5847 21.9999 9.36377 20.779 9.36377 19.2726C9.36377 19.0372 9.39286 18.8081 9.44922 18.5908"
-                stroke="#4493F2"
-                stroke-width="1.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M21.1818 18.3636H3L6.63636 12V7.45455C6.63636 4.44273 9.07909 2 12.0909 2C15.1027 2 17.5455 4.44273 17.5455 7.45455V12L21.1818 18.3636Z"
-                stroke="#4493F2"
-                stroke-width="1.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
+        <div class="noty__block">
+          <div class="notify__icon">
+            <div class="dropdown noty">
+              <div onclick="myFunction()" class="dropbtn noty">
+                <div class="svg">
+                  <svg
+                    class="noty__dot active"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                  >
+                    <circle
+                      cx="4"
+                      cy="4"
+                      r="3.5"
+                      fill="#DD769B"
+                      stroke="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.732 18.5908C14.7883 18.8081 14.8183 19.0372 14.8183 19.2726C14.8183 20.779 13.5965 21.9999 12.091 21.9999C10.5847 21.9999 9.36377 20.779 9.36377 19.2726C9.36377 19.0372 9.39286 18.8081 9.44922 18.5908"
+                      stroke="#4493F2"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.1818 18.3636H3L6.63636 12V7.45455C6.63636 4.44273 9.07909 2 12.0909 2C15.1027 2 17.5455 4.44273 17.5455 7.45455V12L21.1818 18.3636Z"
+                      stroke="#4493F2"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div id="myDropdown" class="dropdown-content noty">
+                <div class="noty__dropdown__item confirm">
+                  <p class="title">
+                    Ваша запись <span class="confirmed">подтверждена</span>
+                  </p>
+                  <div class="date">
+                    <svg
+                      class="time"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.7578 8.90943C13.7578 12.0894 11.1803 14.667 8.00025 14.667C4.82025 14.667 2.24268 12.0894 2.24268 8.90943C2.24268 5.72943 4.82025 3.15186 8.00025 3.15186C11.1803 3.15186 13.7578 5.72943 13.7578 8.90943Z"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.57617 9.21243H8.00041V6.18213"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.3335 3.75774L4.3638 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.667 3.75774L11.6367 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="date__text">15 августа в 13:01</p>
+                  </div>
+                </div>
+                <div class="noty__dropdown__item cancel">
+                  <p class="title">
+                    Ваша запись <span class="rejected">подтверждена</span>
+                  </p>
+                  <div class="date">
+                    <svg
+                      class="time"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.7578 8.90943C13.7578 12.0894 11.1803 14.667 8.00025 14.667C4.82025 14.667 2.24268 12.0894 2.24268 8.90943C2.24268 5.72943 4.82025 3.15186 8.00025 3.15186C11.1803 3.15186 13.7578 5.72943 13.7578 8.90943Z"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.57617 9.21243H8.00041V6.18213"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.3335 3.75774L4.3638 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.667 3.75774L11.6367 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="date__text">15 августа в 13:01</p>
+                  </div>
+                </div>
+                <div class="noty__dropdown__item tip">
+                  <p class="tip__text">
+                    Врач Нурмагамбет Б. написал Вам направление для лечение.
+                    <a href="" class="load">Скачайте документ</a> в личном
+                    кабинете
+                  </p>
+                  <div class="date">
+                    <svg
+                      class="time"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.7578 8.90943C13.7578 12.0894 11.1803 14.667 8.00025 14.667C4.82025 14.667 2.24268 12.0894 2.24268 8.90943C2.24268 5.72943 4.82025 3.15186 8.00025 3.15186C11.1803 3.15186 13.7578 5.72943 13.7578 8.90943Z"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M5.57617 9.21243H8.00041V6.18213"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M1.3335 3.75774L4.3638 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M14.667 3.75774L11.6367 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <p class="date__text">15 августа в 13:01</p>
+                  </div>
+                </div>
+                <div class="noty__dropdown__item tip">
+                  <p class="tip__text">
+                    Врач Нурмагамбет Б. написал Вам направление для лечение.
+                    <a href="" class="load">Скачайте документ</a> в личном
+                    кабинете
+                  </p>
+                  <div class="date">
+                    <svg
+                      class="time"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.7578 8.90943C13.7578 12.0894 11.1803 14.667 8.00025 14.667C4.82025 14.667 2.24268 12.0894 2.24268 8.90943C2.24268 5.72943 4.82025 3.15186 8.00025 3.15186C11.1803 3.15186 13.7578 5.72943 13.7578 8.90943Z"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M5.57617 9.21243H8.00041V6.18213"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M1.3335 3.75774L4.3638 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M14.667 3.75774L11.6367 1.3335"
+                        stroke="#6F7893"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <p class="date__text">15 августа в 13:01</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="noty__dropdown" id="myDropdown"></div>
         </div>
+
         <a href="registration_log_in.html" class="profile__btn">
           <img src="img/icons/header/ic_profile.svg" alt="" />
           <p>Личный кабинет</p>
@@ -162,7 +364,7 @@
                       <img src="img/news__block/doctor_statoscope.jpg" alt="" />
                     </div>
                     <p class="date">12 декабря</p>
-                    <p class="text">Кому обращаться если болит голова</p>
+                    <p class="text">К кому обращаться если болит голова</p>
                   </a>
                 </div>
                 <div class="swiper-slide">
@@ -175,7 +377,7 @@
                       <img src="img/news__block/eggs_cup.jpg" alt="" />
                     </div>
                     <p class="date">12 декабря</p>
-                    <p class="text">Кому обращаться если болит голова</p></a
+                    <p class="text">К кому обращаться если болит голова</p></a
                   >
                 </div>
                 <div class="swiper-slide">
@@ -188,7 +390,7 @@
                       <img src="img/news__block/flowers.jpg" alt="" />
                     </div>
                     <p class="date">12 декабря</p>
-                    <p class="text">Кому обращаться если болит голова</p>
+                    <p class="text">К кому обращаться если болит голова</p>
                   </a>
                 </div>
                 <div class="swiper-slide">
@@ -197,7 +399,7 @@
                       <img src="img/news__block/plaid_trousers.jpg" alt="" />
                     </div>
                     <p class="date">12 декабря</p>
-                    <p class="text">Кому обращаться если болит голова</p>
+                    <p class="text">К кому обращаться если болит голова</p>
                   </a>
                 </div>
               </div>

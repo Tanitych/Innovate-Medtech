@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #f6f6f6">
-    <!-- @import "header.html" -->
+    <!-- @import "header__logged__in.html" -->
 
     <div class="pacient__profile">
       <div class="container">
@@ -55,28 +55,20 @@
                 </div>
                 <div class="profile__records__block">
                   <h4 class="records__title">Мои записи</h4>
-                  <div class="records__body">
+                  <div class="records__body appear">
                     <div class="records__appear__item">
                       <div class="doctor__variant__item">
-                        <div class="doctors__info">
-                          <div class="avatar__img">
+                        <div class="doctors__info appear">
+                          <div class="avatar__img appear">
                             <img
                               src="img/pacient__profile/Avatar-0.jpg"
                               alt=""
                             />
                           </div>
-                          <div class="doctor__variant__content">
-                            <div class="doctor__variant__content__body">
-                              <a href="info__doctor__profile.html" class="name"
-                                >Ralph Edwards</a
-                              >
-                              <p class="speciality">Уролог</p>
-                              <p class="work__place">
-                                Клиника: Innovative Medical Technology
-                              </p>
-
+                          <div class="doctor__variant__appear">
+                            <div class="consult">
+                              <p class="text">консультация №32415</p>
                               <div class="star__rate__block">
-                                <a href="" class="reviews__num">128 отзывов</a>
                                 <div class="star__rates__content">
                                   <img
                                     src="img/icons/pacient__profile/full_star.svg"
@@ -106,21 +98,225 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="service__price">
-                              <p class="text">
-                                8 000
-                                <span>₸/час</span>
-                              </p>
+                            <h4 class="name">Ralph Edwards</h4>
+                            <p class="speciality">
+                              Уролог・Innovative Medical Technology
+                            </p>
+                            <div class="details__price">
+                              <a href="" class="details__link">Детали</a>
+                              <p class="price">8 000 <span>₸/час</span></p>
                             </div>
                           </div>
                         </div>
-                        <div class="doctor__schedule">
-                          <p class="free__time">Свободное время</p>
-                          <div class="schedule__time">
-                            <p class="time__item">09:00</p>
-                            <p class="time__item">12:00</p>
-                            <p class="time__item">14:00</p>
-                            <p class="time__item">16:00</p>
+                        <div class="doctor__schedule appear">
+                          <p class="record__time__title">Время записи</p>
+                          <div class="record__time__block">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M2 10.1816H22"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M6.5459 2V6.54545"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.4541 2V6.54545"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <div class="record__time__block__text">
+                              <span class="date"> Дата записи </span>
+                              <p class="time">12 апреля, в 8:00 утра</p>
+                            </div>
+                          </div>
+                          <div class="time__block__appear">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M17.1977 11.1364C17.1977 15.1114 13.9757 18.3334 10.0007 18.3334C6.02568 18.3334 2.80371 15.1114 2.80371 11.1364C2.80371 7.16142 6.02568 3.93945 10.0007 3.93945C13.9757 3.93945 17.1977 7.16142 17.1977 11.1364Z"
+                                stroke="#4493F2"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M6.96973 11.5149H10V7.72705"
+                                stroke="#4493F2"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M1.66699 4.69681L5.45487 1.6665"
+                                stroke="#4493F2"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M18.3338 4.69681L14.5459 1.6665"
+                                stroke="#4493F2"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <p class="text">Ваша запись на расмотрений</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="records__appear__item">
+                      <div class="doctor__variant__item">
+                        <div class="doctors__info appear">
+                          <div class="avatar__img appear">
+                            <img
+                              src="img/pacient__profile/Avatar-1.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="doctor__variant__appear">
+                            <div class="consult">
+                              <p class="text">консультация №32415</p>
+                              <div class="star__rate__block">
+                                <div class="star__rates__content">
+                                  <img
+                                    src="img/icons/pacient__profile/full_star.svg"
+                                    alt="rate"
+                                    class="star__rates full"
+                                  />
+                                  <img
+                                    src="img/icons/pacient__profile/full_star.svg"
+                                    alt="rate"
+                                    class="star__rates full"
+                                  />
+                                  <img
+                                    src="img/icons/pacient__profile/full_star.svg"
+                                    alt="rate"
+                                    class="star__rates full"
+                                  />
+                                  <img
+                                    src="img/icons/pacient__profile/half_star.svg"
+                                    alt="rate"
+                                    class="star__rates half"
+                                  />
+                                  <img
+                                    src="img/icons/pacient__profile/empty_star.svg"
+                                    alt="rate"
+                                    class="star__rates empty"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <h4 class="name">Ralph Edwards</h4>
+                            <p class="speciality">
+                              Психотерапевт・Innovative Medical Technology
+                            </p>
+                            <div class="details__price">
+                              <a href="" class="details__link"
+                                >Заключение врача</a
+                              >
+                              <p class="price">8 000 <span>₸/час</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="doctor__schedule appear">
+                          <p class="record__time__title">Время записи</p>
+                          <div class="record__time__block">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M2 10.1816H22"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M6.5459 2V6.54545"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.4541 2V6.54545"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <div class="record__time__block__text">
+                              <span class="date"> Дата записи </span>
+                              <p class="time">12 апреля, в 8:00 утра</p>
+                            </div>
+                          </div>
+                          <div class="time__block__appear">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                            >
+                              <path
+                                d="M3.33301 11.7856L9.04729 15.5951L16.6663 4.1665"
+                                stroke="#6F7893"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <p class="text consult__done">
+                              Консультация завершена
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -514,7 +710,125 @@
                   <button class="download__more__btn">Загрузить еще</button>
                 </div>
               </div>
-              <div class="tabs__item" id="history">history</div>
+              <div class="tabs__item" id="history">
+                <div class="history__table">
+                  <table class="history">
+                    <thead>
+                      <tr>
+                        <th>№</th>
+                        <th>Дата консультации</th>
+                        <th>Ф.И.О врача</th>
+                        <th>Название консультации</th>
+                        <th>Сумма</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td aria-label="001." class="number"><p>001.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          12 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Константин Константинопольский
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Невропатология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="002." class="number">
+                          <p>002.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          11 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Marvin McKinney
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Хирургия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="003." class="number">
+                          <p>003.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          9 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Theresa Webb
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Психотерапия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="004." class="number"><p>004.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          7 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Savannah Nguyen
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Урология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="005." class="number"><p>005.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          14 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Bessie Cooper
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Терапия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="006." class="number">
+                          <p>006.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          3 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Wade Warren
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Невропатология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
           <div class="pacient__profile__subscribe__status">
