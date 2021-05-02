@@ -209,5 +209,20 @@ tabsBtn.forEach(function (item) {
     });
 });
 
-document.querySelector('.tabs__nav__btn:nth-child(1)').click();
+document.querySelector('.tabs__nav__btn:nth-child(3)').click();
 
+//star rate
+
+
+$(function () {
+
+    $("#rateYo").rateYo({
+        rating: 0,
+        ratedFill: "#F8CC46",
+        normalFill: "#A0A0A0",
+        starWidth: "14.6px"
+
+    });
+
+
+});

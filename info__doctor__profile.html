@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #f6f6f6">
@@ -393,20 +397,65 @@
                 <button
                   class="tabs__nav__btn"
                   type="button"
-                  data-tab="#profile"
+                  data-tab="#consultations"
                 >
-                  О специалисте
+                  Мои консультации
                 </button>
                 <button
                   class="tabs__nav__btn"
                   type="button"
-                  data-tab="#doctors"
+                  data-tab="#about__specialist"
                 >
+                  О специалисте
+                </button>
+                <button class="tabs__nav__btn" type="button" data-tab="#review">
                   Отзывы о враче
                 </button>
               </div>
               <div class="tabs__content">
-                <div class="tabs__item" id="profile">
+                <div class="tabs__item" id="consultations">
+                  <div class="consultations__block">
+                    <div class="consultations__left">
+                      <p class="number">консультация №32415</p>
+                      <p class="consult__time">12 апреля 2021, в 8:00 утра</p>
+                      <a href="" class="dowload__appointment"
+                        >Скачать назначения врача</a
+                      >
+                    </div>
+                    <div class="consultations__right">
+                      <p class="leave__an__review">
+                        Оставьте отзыв о консультации и о враче
+                      </p>
+                      <button
+                        data-tab="#review"
+                        class="make__an__review tabs__nav__btn"
+                      >
+                        Оставить отзыв
+                      </button>
+                    </div>
+                  </div>
+                  <div class="consultations__block">
+                    <div class="consultations__left">
+                      <p class="number">консультация №32415</p>
+                      <p class="consult__time">12 апреля 2021, в 8:00 утра</p>
+                      <a href="" class="dowload__appointment"
+                        >Скачать назначения врача</a
+                      >
+                    </div>
+                    <div class="consultations__right">
+                      <p class="leave__an__review">
+                        Вы оставили отзыв об этом враче и консультации
+                      </p>
+                      <button
+                        data-tab="#review"
+                        class="review__request tabs__nav__btn"
+                      >
+                        Оставить отзыв
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item" id="about__specialist">
                   <div class="about__specialist">
                     <p class="text">
                       Нейрохирург. Сертифицированный дипломат Американской
@@ -418,9 +467,32 @@
                     </p>
                   </div>
                 </div>
-                <div class="tabs__item" id="doctors">
+                <div class="tabs__item" id="review">
                   <div class="background__in__tab">
                     <div class="reviews__block__content">
+                      <form action="" class="star_rate__review__block">
+                        <div class="star__review__img">
+                          <img src="img/pacient__profile/Avatar-0.jpg" alt="" />
+                        </div>
+                        <div class="star__review__content">
+                          <p class="star__review__name">Азимханов Ануар</p>
+                          <div class="star__input__block">
+                            <div id="rateYo"></div>
+                            <textarea
+                              class="review__textarea"
+                              name=""
+                              id=""
+                              placeholder="Оставьте отзыв о консультации и враче"
+                              required
+                            ></textarea>
+                          </div>
+                          <div class="btn__block">
+                            <button class="leave_review__btn">
+                              Оставить отзыв
+                            </button>
+                          </div>
+                        </div>
+                      </form>
                       <div class="reviews__block__item">
                         <div class="img__name">
                           <img src="img/reviews__block/Victoria.jpg" alt="" />
@@ -574,6 +646,7 @@
     <script src="js/jq/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
