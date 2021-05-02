@@ -2803,6 +2803,7 @@ footer {
     flex-direction: column;
     margin-left: 0;
     align-items: flex-start;
+    width: 100% !important;
   }
   .name {
     font-style: normal;
@@ -2959,6 +2960,7 @@ footer {
   width: 100%;
   max-width: 912px;
   margin-right: 15px;
+  margin-left: 15px;
   .doctors__info {
     @media (max-width: 1200px) {
       border-bottom: unset;
