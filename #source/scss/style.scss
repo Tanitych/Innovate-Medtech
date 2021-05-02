@@ -4615,7 +4615,7 @@ table.history td:before {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 50; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -4639,7 +4639,7 @@ table.history td:before {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 13% auto; /* 15% from the top and centered */
     padding: 18px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */

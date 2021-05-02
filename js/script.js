@@ -209,7 +209,7 @@ tabsBtn.forEach(function (item) {
     });
 });
 
-document.querySelector('.tabs__nav__btn:nth-child(2)').click();
+document.querySelector('.tabs__nav__btn:nth-child(1)').click();
 
 //star rate
 
