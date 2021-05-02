@@ -451,14 +451,57 @@
                           type="text"
                           class="search__input"
                       /></label>
-                      <label for="calendar">
+
+                      <label for="datepicker" class="data__picker__calendar">
+                        <picture class="calendar__icon"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M2 10.1816H22"
+                              stroke="#6F7893"
+                              stroke-width="1.6"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                              stroke="#6F7893"
+                              stroke-width="1.6"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M6.5459 2V6.54545"
+                              stroke="#6F7893"
+                              stroke-width="1.6"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M17.4541 2V6.54545"
+                              stroke="#6F7893"
+                              stroke-width="1.6"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            /></svg
+                        ></picture>
                         <input
                           required
-                          type="datetime-local"
-                          class="calendar"
-                          id="calendar"
+                          readonly
+                          type="text"
+                          id="datepicker"
+                          placeholder="Время записи"
+                          class="datapicker__input"
                         />
                       </label>
+
                       <button class="find">Найти</button>
                     </form>
                     <div class="sort__block">
@@ -932,7 +975,52 @@
                   Купите подписку чтобы полноценно использовать весь функционал
                   сервиса.
                 </p>
-                <button>Оформить подписку</button>
+                <button id="myBtn">Оформить подписку</button>
+
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form action="" class="modal__subscribe">
+                      <p class="modal__subscribe__title">Оформите подписку</p>
+                      <p class="modal__subscribe__subtitle">
+                        Купите подписку чтобы записаться на консультацию к врачу
+                      </p>
+                      <p class="modal__choose__period">
+                        Выберите период подписки:
+                      </p>
+                      <div class="sebscribe__custom_radio">
+                        <label class="container"
+                          >One
+                          <input type="radio" checked="checked" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container"
+                          >Two
+                          <input type="radio" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container"
+                          >Three
+                          <input type="radio" name="radio" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="subscribe__gives">
+                        <p class="subscribe__gives__title">
+                          Подписка Вам дает:
+                        </p>
+                        <div class="subscribe__gives__text">
+                          <ul>
+                            <li>Неограниченный доступ специалистам</li>
+                            <li>Неограниченное количество консультации</li>
+                            <li>Круглосуточный доступ к платформе</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="buy__subscribe" >Оформить подписку</button>
+                    </form>
+                  </div>
+                </div>
               </div>
               <div class="status__item active">
                 <h4 class="status__title">Ваша подписка активна</h4>
@@ -1015,6 +1103,7 @@
     <script src="js/jq/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
