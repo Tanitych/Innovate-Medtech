@@ -6,6 +6,7 @@ $(document).ready(function () {
     });
 });
 
+
 //dropdown
 
 
@@ -253,3 +254,21 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+//subscribe 
+
+const subBtn = document.querySelectorAll(".radio__container");
+
+subBtn.forEach(
+    function (item) {
+        item.addEventListener("click", function () {
+            let subCurrentBtn = item;
+
+            subBtn.forEach(function (item) {
+                item.classList.remove("active")
+            });
+
+            subCurrentBtn.classList.add("active");
+        });
+    }
+);

@@ -586,6 +586,203 @@
               </div>
             </div>
           </div>
+          <div class="pacient__profile__subscribe__status">
+            <div class="status__body">
+              <form action="" class="status__item date__record">
+                <p class="date__record__title">Запись к врачу</p>
+                <div class="calendar__content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M2 10.1816H22"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.54492 2V6.54545"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.4551 2V6.54545"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="calendar__content__text">
+                    <p class="text__date">Дата записи</p>
+                    <p class="date__info">12 апреля, в 8:00 утра</p>
+                  </div>
+                </div>
+                <div class="record__check">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.1967 11.1364C17.1967 15.1114 13.9747 18.3334 9.9997 18.3334C6.0247 18.3334 2.80273 15.1114 2.80273 11.1364C2.80273 7.16142 6.0247 3.93945 9.9997 3.93945C13.9747 3.93945 17.1967 7.16142 17.1967 11.1364Z"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.96875 11.5149H9.99905V7.72705"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.66602 4.69681L5.45389 1.6665"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.3328 4.69681L14.5449 1.6665"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="check__text">Ваша запись на расмотрений</p>
+                </div>
+                <button class="check__btn">+ Еще одна запись</button>
+              </form>
+              <div class="status__item subscribe">
+                <h4 class="status__title">Оформите подписку</h4>
+                <div class="status__img">
+                  <img src="img/pacient__profile/microscope.svg" alt="" />
+                </div>
+                <p class="status__text">
+                  Купите подписку чтобы полноценно использовать весь функционал
+                  сервиса.
+                </p>
+                <button id="myBtn">Оформить подписку</button>
+
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#B9C2CF"></circle>
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg
+                    ></span>
+                    <form action="" class="modal__subscribe">
+                      <p class="modal__subscribe__title">Оформите подписку</p>
+                      <p class="modal__subscribe__subtitle">
+                        Купите подписку чтобы записаться на консультацию к врачу
+                      </p>
+                      <p class="modal__choose__period">
+                        Выберите период подписки:
+                      </p>
+                      <div class="subscribe__custom_radio">
+                        <label class="radio__container active">
+                          <input type="radio" checked="checked" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <p class="price">8 990₸</p>
+                        </label>
+                        <label class="radio__container">
+                          <p class="recomend">Рекомендуем</p>
+                          <input type="radio" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price blue">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
+                        </label>
+                        <label class="radio__container">
+                          <p class="profitable">Выгодно</p>
+                          <input type="radio" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price red">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="subscribe__gives">
+                        <p class="subscribe__gives__title">
+                          Подписка Вам дает:
+                        </p>
+                        <div class="subscribe__gives__text">
+                          <ul>
+                            <li>Неограниченный доступ специалистам</li>
+                            <li>Неограниченное количество консультации</li>
+                            <li>Круглосуточный доступ к платформе</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="buy__subscribe">Оформить подписку</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

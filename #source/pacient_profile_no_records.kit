@@ -674,7 +674,44 @@
 
                 <div id="myModal" class="modal">
                   <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#B9C2CF" />
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
                     <form action="" class="modal__subscribe">
                       <p class="modal__subscribe__title">Оформите подписку</p>
                       <p class="modal__subscribe__subtitle">
@@ -683,21 +720,32 @@
                       <p class="modal__choose__period">
                         Выберите период подписки:
                       </p>
-                      <div class="sebscribe__custom_radio">
-                        <label class="container"
-                          >One
+                      <div class="subscribe__custom_radio">
+                        <label class="radio__container active">
                           <input type="radio" checked="checked" name="radio" />
-                          <span class="checkmark"></span>
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <p class="price">8 990₸</p>
                         </label>
-                        <label class="container"
-                          >Two
+                        <label class="radio__container">
+                          <p class="recomend">Рекомендуем</p>
                           <input type="radio" name="radio" />
-                          <span class="checkmark"></span>
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price blue">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
                         </label>
-                        <label class="container"
-                          >Three
+                        <label class="radio__container">
+                          <p class="profitable">Выгодно</p>
                           <input type="radio" name="radio" />
-                          <span class="checkmark"></span>
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price red">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
                         </label>
                       </div>
                       <div class="subscribe__gives">
@@ -712,7 +760,7 @@
                           </ul>
                         </div>
                       </div>
-                      <button class="buy__subscribe" >Оформить подписку</button>
+                      <button class="buy__subscribe">Оформить подписку</button>
                     </form>
                   </div>
                 </div>

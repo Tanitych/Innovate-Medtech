@@ -2424,7 +2424,7 @@ footer {
 .pacient__profile__subscribe__status {
   max-width: 343px;
   width: 100%;
-  padding-top: 48px;
+  padding-top: 64px;
   @media (max-width: 950px) {
     padding-top: 42px;
   }
@@ -2947,7 +2947,7 @@ footer {
   }
   .doctor__variant__item {
     width: 100%;
-    max-width: 912px;
+    max-width: 900px;
     margin-right: 10px;
     margin-bottom: 14px;
   }
@@ -2958,6 +2958,7 @@ footer {
 .info__doctor__content {
   width: 100%;
   max-width: 912px;
+  margin-right: 15px;
   .doctors__info {
     @media (max-width: 1200px) {
       border-bottom: unset;
@@ -4639,39 +4640,40 @@ table.history td:before {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 13% auto; /* 15% from the top and centered */
+    margin: 6% auto; /* 15% from the top and centered */
     padding: 18px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     max-width: 448px;
     background: #ffffff;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 600px) {
+      padding: 10px;
+    }
   }
 
   /* The Close Button */
   .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    text-align: end;
+    cursor: pointer;
   }
 
   .close:hover,
   .close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
   }
 }
 
 //modal subscribe
 
-.sebscribe__custom_radio {
+.subscribe__custom_radio {
   /* Customize the label (the container) */
-  .container {
+  .radio__container {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding: 50px 8px 8px 8px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
@@ -4679,10 +4681,132 @@ table.history td:before {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border: 2px solid rgba(185, 194, 207, 0.4);
+    border-radius: 6px;
+    transition: all ease 0.2s;
+
+    &.active {
+      background: #64b5a6;
+      .month {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 2px;
+        color: #ffffff;
+      }
+      .price {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+      }
+    }
+    .price {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      /* identical to box height, or 129% */
+
+      display: flex;
+      align-items: center;
+    }
+    .month {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 133% */
+
+      display: flex;
+      align-items: center;
+
+      /* Primary Black */
+
+      color: #3c3f42;
+    }
+    .prices {
+      display: flex;
+      @media (max-width: 350px) {
+        flex-direction: column;
+      }
+    }
+    .new_price {
+      font-size: 14px;
+      line-height: 18px;
+
+      display: flex;
+      align-items: center;
+      margin-right: 4px;
+      &.blue {
+        color: #4493f2;
+      }
+      &.red {
+        color: #dd769b;
+      }
+    }
+    .old__price {
+      line-height: 18px;
+      font-size: 14px;
+      color: #6f7893;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 1px;
+        left: 0;
+        top: 9px;
+        background-color: #6f7893;
+      }
+    }
+    .recomend {
+      display: block;
+      padding: 6px 9px;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 16px;
+      background: #e1f3f8;
+      border-radius: 4px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #4493f2;
+      position: absolute;
+      top: -15px;
+      left: 23px;
+      @media (max-width: 382px) {
+        left: 18px;
+      }
+      @media (max-width: 348px) {
+        left: 11px;
+      }
+    }
+    .profitable {
+      display: block;
+      padding: 6px 9px;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 16px;
+      background: #ffecec;
+      border-radius: 4px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #dd769b;
+      position: absolute;
+      top: -15px;
+      left: 35px;
+      @media (max-width: 382px) {
+        left: 27px;
+      }
+    }
   }
 
   /* Hide the browser's default radio button */
-  .container input {
+  .radio__container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -4691,44 +4815,46 @@ table.history td:before {
   }
 
   /* Create a custom radio button */
-  .checkmark {
+  .subscribe__checkmark {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    top: 20px;
+    left: 9px;
+    height: 22px;
+    width: 22px;
+    background-color: #ffffff;
     border-radius: 50%;
+    border: 3px solid rgba(185, 194, 207, 0.4);
   }
 
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
+  .radio__container:hover input ~ .subscribe__checkmark {
+    border: 3px solid rgba(162, 171, 182, 0.4);
   }
 
   /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #2196f3;
+  .radio__container input:checked ~ .subscribe__checkmark {
+    background-color: #64b5a6;
+    border: 3px solid #ffffff;
   }
 
   /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+  .subscribe__checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
 
   /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
+  .radio__container input:checked ~ .subscribe__checkmark:after {
     display: block;
   }
 
   /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
+  .radio__container .subscribe__checkmark:after {
+    top: 1px;
+    left: 1px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: white;
   }
@@ -4757,10 +4883,11 @@ table.history td:before {
   line-height: 46px;
   margin-bottom: 8px;
   text-align: center;
-
-  /* Primary Black */
-
   color: #3c3f42;
+  @media (max-width: 600px) {
+    font-size: 28px;
+    line-height: 24px;
+  }
 }
 .modal__subscribe__subtitle {
   font-style: normal;
@@ -4768,25 +4895,39 @@ table.history td:before {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 23px;
-
   text-align: center;
-
-  /* Primary Black */
-
   color: #3c3f42;
+  @media (max-width: 600px) {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
 }
 .modal__choose__period {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 29px;
   text-align: center;
   color: #3c3f42;
+  @media (max-width: 600px) {
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
 }
-.sebscribe__custom_radio {
-  display: flex;
+.subscribe__custom_radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 8px;
   margin-bottom: 23px;
+  @media (max-width: 515px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 2px;
+  }
 }
 .subscribe__gives {
   .subscribe__gives__title {
@@ -4819,6 +4960,98 @@ table.history td:before {
 
         color: #3c3f42;
       }
+    }
+  }
+}
+
+//ckeck record
+
+.status__item {
+  &.date__record {
+    background: #ffffff;
+    border-radius: 6px;
+    .date__record__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      /* identical to box height, or 133% */
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+
+      /* Primary Black */
+
+      color: #3c3f42;
+    }
+    .calendar__content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .calendar__content__text {
+      margin-left: 11px;
+      .text__date {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        display: flex;
+        align-items: center;
+
+        /* Primary Gray */
+
+        color: #6f7893;
+      }
+      .date__info {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+
+        display: flex;
+        align-items: center;
+
+        /* Primary Black */
+
+        color: #3c3f42;
+      }
+    }
+
+    .record__check {
+      display: flex;
+      align-items: center;
+      .check__text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 5px;
+
+        color: #4493f2;
+      }
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(185, 194, 207, 0.4);
+      margin-bottom: 15px;
+    }
+  }
+  .check__btn {
+    border: 2px solid rgba(185, 194, 207, 0.4);
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
+
+    /* Red */
+
+    color: #dd769b;
+    &:hover {
+      background-color: #fdfdfd;
     }
   }
 }
