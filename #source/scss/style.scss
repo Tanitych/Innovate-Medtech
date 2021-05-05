@@ -2303,6 +2303,46 @@ footer {
   &.active {
     display: block;
   }
+  .statistic__numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 10px;
+    margin-bottom: 24px;
+    @media (max-width: 768px) {
+      column-gap: 10px;
+    }
+    .statistic__numbers__item {
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 12px 16px;
+      @media (max-width: 768px) {
+        padding: 8px 9px;
+      }
+      .text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6f7893;
+        @media (max-width: 768px) {
+          margin-bottom: 5px;
+          line-height: 16px;
+        }
+      }
+      .number {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 46px;
+        color: #3c3f42;
+        @media (max-width: 768px) {
+          font-size: 20px;
+          line-height: 110%;
+        }
+      }
+    }
+  }
 }
 
 //pacient__profile
@@ -2311,6 +2351,11 @@ footer {
   padding-left: 95px;
   display: flex;
   justify-content: space-between;
+  &.doctor__profile {
+    @media (max-width: 1300px) {
+      flex-direction: column;
+    }
+  }
   @media (max-width: 1200px) {
     padding-left: 0;
   }
@@ -2463,6 +2508,7 @@ footer {
   max-width: 343px;
   width: 100%;
   padding-top: 64px;
+  min-width: 290px;
   @media (max-width: 950px) {
     padding-top: 42px;
   }
@@ -2526,6 +2572,11 @@ footer {
   position: absolute;
   top: -31px;
   right: 24px;
+  &.graphs {
+    @media (max-width: 1310px) and (min-width: 1300px) {
+      right: -1px;
+    }
+  }
 }
 .status__text {
   font-style: normal;
@@ -2773,7 +2824,25 @@ footer {
   @media (max-width: 550px) {
     padding: 24px 15px 5px 15px;
   }
+  &.my__pacient {
+    padding: 10px 24px 15px 24px;
+    .doctors__info.appear {
+      padding: 20px 0px 20px 0px;
+      margin: 0px 0px 0px 0px;
+      align-items: center;
+    }
+    .doctor__schedule.appear {
+      padding: 20px 0px 0px 0px;
+    }
+    .doctor__variant__appear .name {
+      margin-bottom: 6px;
+    }
+    .time__block__appear {
+      margin-left: 32px;
+    }
+  }
 }
+
 .doctors__info {
   display: flex;
   align-items: flex-start;
@@ -2804,6 +2873,19 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-right: 0;
+  }
+  &.pacient__info {
+    .consult__num {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+
+      /* Primary Gray */
+
+      color: #6f7893;
+    }
   }
 }
 .avatar__img {
@@ -3282,7 +3364,7 @@ footer {
   font-size: 14px;
   line-height: 18px;
   color: #3c3f42;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .record__time__block {
   display: flex;
@@ -3322,6 +3404,13 @@ footer {
     &.consult__done {
       color: #6f7893;
     }
+    &.accepted__apply {
+      color: #64b5a6;
+      font-size: 18px;
+    }
+    &.refuce__apply {
+      color: #dd769b;
+    }
   }
 }
 
@@ -3353,9 +3442,14 @@ table.history thead {
     text-align: start;
     color: #6f7893;
     padding: 0px 3px 10px 3px;
+
     &:nth-child(1) {
       padding: 0px 3px 10px 15px;
     }
+  }
+  .summ {
+    text-align: right;
+    padding-right: 12px;
   }
 }
 
@@ -3572,6 +3666,7 @@ table.history td:before {
 
 //
 .change__password {
+  max-width: 900px;
   .change__password__title {
     font-style: normal;
     font-weight: normal;
@@ -5154,4 +5249,212 @@ table.history td:before {
 }
 
 .search__input.doctor__profile {
+}
+
+//chart
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+.highcharts-credits {
+  display: none !important;
+}
+
+.records__body.doctor__profile.appear {
+  flex-direction: row;
+  justify-content: flex-start;
+  .doctors__variant.doctor__profile {
+    width: 100%;
+  }
+}
+
+.doctor__profile.acc_cancel_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 10px;
+  button {
+    border-radius: 6px;
+    padding: 8px 28px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  .accept__btn {
+    background: #64b5a6;
+  }
+  .cancel__btn {
+    background: #dd769b;
+  }
+}
+
+.custom__placeholder_doctor {
+  position: relative;
+  display: block;
+  border: 2px solid rgba(185, 194, 207, 0.4);
+  border-radius: 4px;
+  height: 56px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 100%;
+  &.about__your {
+    height: 112px;
+    .input__about {
+      height: 1 00%;
+    }
+  }
+  .placeholder__text {
+    position: absolute;
+    top: 0;
+    left: 11px;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #6f7893;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 26px;
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+    padding: 25px 11px 8px 11px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 112%;
+    color: #3c3f42;
+    scrollbar-color: #ffffff #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin; /* толщина */
+    height: 52px;
+    overflow: hidden;
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 5px;
+      background-color: #ffffff;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff;
+    }
+  }
+}
+.pacient__profile__body.doctor__profile {
+  .custom-select {
+    background-color: #ffffff;
+  }
+}
+
+.bottom__inputs {
+  display: grid;
+  grid-template-columns: 5fr 4fr 2fr;
+  column-gap: 9px;
+  row-gap: 0px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.custom__placeholder.cost.doctor__pofile {
+  overflow: hidden;
+  border: 2px solid rgba(185, 194, 207, 0.4);
+  border-radius: 4px;
+  height: 56px;
+  width: 100%;
+  @media (max-width: 768px) {
+    margin-top: 15px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 0px;
+  }
+  .placeholder__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    color: #6f7893;
+    max-height: 16px;
+    overflow: hidden;
+  }
+  position: relative;
+  .custom__cost {
+    width: 100%;
+    height: 100%;
+  }
+}
+.select__block.doctor__profile {
+  width: 100%;
+}
+.about__you {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  max-width: 900px;
+}
+.save__button.doctor__pofile,
+.about__you__btn {
+  background: rgba(185, 194, 207, 0.4);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #6f7893;
+  padding: 12px 18px;
+  width: unset;
+  margin-top: 20px;
+  @media (max-width: 650px) {
+    width: 100%;
+  }
+}
+.save__button.doctor__pofile {
+  margin: 0px 0px 12px 0px;
 }

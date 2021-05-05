@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovative Medtech</title>
+    <link rel="shortcut icon" href="img/icons/favicon.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f6f6f6">
+    <!-- @import "header__logged__in.html" -->
+
+    <div class="info__doctor__profile">
+      <div class="container">
+        <div class="pacient__profile__body doctor__profile">
+          <div class="info__doctor__content">
+            <div class="info__doctor__head">
+              <a href="javascript:history.back()" class="back__btn"> Назад </a>
+              <h4 class="title">Редактировать профиль</h4>
+            </div>
+            <div class="doctor__variant__item">
+              <form action="" class="doctors__info edit__prof">
+                <div class="img__inputs__block">
+                  <div class="avatar__img">
+                    <img src="img/pacient__profile/Avatar.jpg" alt="" />
+                  </div>
+                  <div class="edit__profile__inputs">
+                    <div class="up__input">
+                      <label for="FIO" class="custom__placeholder">
+                        <p class="placeholder__text">Ваш Ф.И.О</p>
+                        <input
+                          id="FIO"
+                          class="custom__input"
+                          required=""
+                          type="text"
+                        />
+                      </label>
+                    </div>
+                    <div class="down__input">
+                      <label for="phone" class="custom__placeholder">
+                        <p class="placeholder__text">Ваш номер телефона</p>
+                        <input
+                          class="custom__input"
+                          id="phone"
+                          required
+                          type="tel"
+                        />
+                      </label>
+                      <label for="email" class="custom__placeholder">
+                        <p class="placeholder__text">Введите ваш e-mail</p>
+                        <input
+                          id="email"
+                          class="custom__input"
+                          required
+                          type="email"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button class="save__button margin_del">Сохранить</button>
+                </div>
+              </form>
+            </div>
+
+            <form action="" class="about__you">
+              <label for="about" class="custom__placeholder_doctor about__your">
+                <p class="placeholder__text">Расскажите о себе</p>
+                <textarea class="input__about" name="" id="about"></textarea>
+              </label>
+              <div class="bottom__inputs">
+                <label for="about" class="custom__placeholder_doctor">
+                  <p class="placeholder__text">Укажите место работы</p>
+                  <textarea name="" id="about"></textarea>
+                </label>
+                <div class="select__block doctor__profile">
+                  <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                      <p class="placeholder">Укажите Вашу специальность</p>
+                      <div class="custom-select__trigger">
+                        <span>Кардиохирург</span>
+                        <div class="arrow"></div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option" data-value="tesla"
+                          >Нейрохирург</span
+                        >
+                        <span class="custom-option selected" data-value="volvo"
+                          >Кардиохирург</span
+                        >
+                        <span class="custom-option" data-value="mercedes"
+                          >Онколог</span
+                        >
+                        <span class="custom-option" data-value="mercedes"
+                          >Нейрохирург</span
+                        >
+                        <span class="custom-option" data-value="mercedes"
+                          >Онколог</span
+                        >
+                        <span class="custom-option" data-value="mercedes"
+                          >Онколог</span
+                        >
+                        <span class="custom-option" data-value="mercedes"
+                          >Нейрохирург</span
+                        >
+                        <span class="custom-option" data-value="mercedes"
+                          >Онколог</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label
+                  for="cost"
+                  class="custom__placeholder cost doctor__pofile"
+                >
+                  <p class="placeholder__text">Стоимость консультации</p>
+                  <input
+                    id="cost"
+                    class="custom__cost"
+                    required=""
+                    type="number"
+                  />
+                </label>
+              </div>
+              <button type="submit" class="about__you__btn">Сохранить</button>
+            </form>
+            <div class="change__password">
+              <p class="change__password__title">Сменить пароль</p>
+              <form action="" class="change__password__block">
+                <div class="inputs">
+                  <label for="password" class="custom__placeholder">
+                    <p class="placeholder__text">Старый пароль</p>
+                    <input
+                      id="password"
+                      class="custom__input"
+                      required=""
+                      type="password"
+                    />
+                  </label>
+                  <input
+                    class="lonely__input"
+                    required=""
+                    type="password"
+                    placeholder="Придумайте новый пароль"
+                  />
+                  <input
+                    class="lonely__input"
+                    required=""
+                    type="password"
+                    placeholder="Повторите новый пароль"
+                  />
+                </div>
+                <div class="button">
+                  <button class="save__button doctor__pofile">Сохранить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- @import "footer.html" -->
+
+    <script>
+      //dropdown
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

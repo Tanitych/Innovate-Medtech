@@ -7,7 +7,61 @@ $(document).ready(function () {
 });
 
 
+//chart
+$(function () {
 
+    /////////////////////////////////////Рисуем график
+    var arr = ['02 мая - 08 мая', 'Консультации', [0, 22, 8, 21, 14, 20, 0],];
+
+    /////////////////////////////////////////////////////////
+    function plotDraw(a, b, c) {
+
+        $('#container').empty();
+
+        var title = { text: 'Грффик статистики' };
+        var subtitle = { text: 'Неделя ' + a };
+
+        var xAxis = { categories: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'] };
+
+        var yAxis = {
+            title: { text: 'Количество пациентов' },
+            plotLines: [{ value: 0, width: 1, color: '#808080' }]
+        };
+
+        var tooltip = { valueSuffix: ' чел.' };
+
+        var legend =
+        {
+            // layout: 'vertical',
+            // align: 'right',
+            // verticalAlign: 'middle',
+            // borderWidth: 0
+        };
+
+        var series = [{
+            name: b,
+            data: c //[-0.1,0.6,4.2,	11.7,17.0,20.9,	 23.4,22.8,17.9,	11.5,6.7,2.6]
+            //
+        }];
+
+        //Показываем график		   
+        var json = {};
+        json.title = title;
+        json.subtitle = subtitle;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.tooltip = tooltip;
+        json.legend = legend;
+        json.series = series;
+
+        $('#container').highcharts(json);
+
+    }
+    /////////////////////////////////////////////////////////
+
+    plotDraw(arr[0], arr[1], arr[2])
+
+})
 
 
 
@@ -286,3 +340,9 @@ window.onclick = function (event) {
         }
     }
 }
+
+
+//schedule
+
+
+
