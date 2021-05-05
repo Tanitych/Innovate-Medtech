@@ -2375,12 +2375,20 @@ footer {
   }
 }
 .info__block__content {
+  &.doctor__profile {
+    width: 76%;
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+  }
+
   .name {
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 46px;
     color: #3c3f42;
+    margin-bottom: 5px;
     @media (max-width: 767px) {
       font-size: 30px;
       line-height: 28px;
@@ -2393,6 +2401,12 @@ footer {
     line-height: 120%;
     color: #3c3f42;
     margin: 8px 0px 8px 0px;
+    &.doctor {
+      margin: 0px 0px 0px 0px;
+      @media (max-width: 600px) {
+        margin: 0px 0px 5px 0px;
+      }
+    }
     @media (max-width: 767px) {
       margin: 8px 0px 3px 0px;
     }
@@ -2404,6 +2418,22 @@ footer {
     line-height: 24px;
     color: #3c3f42;
     margin-bottom: 18px;
+    &.doctor {
+      margin: 0px 0px 0px 15px;
+      position: relative;
+      &::before {
+        content: "・";
+        position: absolute;
+        left: -15px;
+        bottom: -1px;
+        @media (max-width: 500px) {
+          display: none;
+        }
+      }
+      @media (max-width: 500px) {
+        margin: 0px 0px 0px 0px;
+      }
+    }
     @media (max-width: 767px) {
       margin-bottom: 8px;
     }
@@ -2420,7 +2450,15 @@ footer {
     }
   }
 }
-
+.mail__phone.profile__doctor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .pacient__profile__subscribe__status {
   max-width: 343px;
   width: 100%;
@@ -2553,7 +2591,8 @@ footer {
     border-radius: 6px;
     transition: all ease 0.3s;
     width: 100%;
-    max-width: 216px;
+    max-width: 241px;
+    background-color: #f6f6f6;
     &:hover {
       box-shadow: 0px 2px 6px -1px #505050;
     }
@@ -2645,6 +2684,10 @@ footer {
         }
       }
     }
+    &.profile__doctor {
+      width: 100%;
+      border-right: unset;
+    }
   }
 
   .search__input {
@@ -2704,10 +2747,12 @@ footer {
   .rate {
     display: flex;
     margin-right: 25px;
+    cursor: pointer;
   }
   .price {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -2844,6 +2889,12 @@ footer {
   align-items: center;
   margin-right: 25px;
   margin-top: 7px;
+  &.doctor {
+    margin-bottom: 18px;
+    .reviews__num {
+      margin: 0px 0px 0px 5px;
+    }
+  }
   @media (max-width: 1200px) {
     flex-direction: column;
     align-items: flex-start;
@@ -5056,4 +5107,51 @@ table.history td:before {
       background-color: #fdfdfd;
     }
   }
+}
+
+.speciality.doctor {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #3c3f42;
+}
+
+.profile__price.doctor__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 540px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    text-align: right;
+
+    /* Primary Black */
+
+    color: #3c3f42;
+    span {
+      margin: 0px 0px 5px 0px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: right;
+
+      /* Primary Gray */
+
+      color: #6f7893;
+    }
+  }
+}
+
+.search__input.doctor__profile {
 }

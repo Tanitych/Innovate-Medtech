@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovative Medtech</title>
+    <link rel="shortcut icon" href="img/icons/favicon.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f6f6f6">
+    <!-- @import "header__logged__in.html" -->
+
+    <div class="pacient__profile">
+      <div class="container">
+        <div class="pacient__profile__body">
+          <div class="tabs">
+            <div class="tabs__nav">
+              <button class="tabs__nav__btn" type="button" data-tab="#profile">
+                Мой профиль
+              </button>
+              </button>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__item" id="profile">
+                <div class="profile__info__block">
+                  <a href="registration_log_in.html" class="exit">Выйти</a>
+                  <div class="info__block__body">
+                    <div class="info__block__img">
+                      <img src="img/pacient__profile/Avatar.jpg" alt="" />
+                    </div>
+                    <div class="info__block__content doctor__profile">
+                      <h4 class="name">Ralph Edwards</h4>
+                      <p class="speciality doctor">Уролог・Клиника: Innovative Medical Technology</p>
+                      <div class="mail__phone profile__doctor"><p class="mail doctor">doctor@mail.com</p>
+                      <p class="phone doctor">+7 701 612 80 70</p></div>
+                      <div class="star__rate__block doctor">
+                   
+                        <div class="star__rates__content">
+                          <img src="img/icons/pacient__profile/full_star.svg" alt="rate" class="star__rates full">
+                          <img src="img/icons/pacient__profile/full_star.svg" alt="rate" class="star__rates full">
+                          <img src="img/icons/pacient__profile/full_star.svg" alt="rate" class="star__rates full">
+                          <img src="img/icons/pacient__profile/half_star.svg" alt="rate" class="star__rates half">
+                          <img src="img/icons/pacient__profile/empty_star.svg" alt="rate" class="star__rates empty">
+                        </div>    
+                         <a href="" class="reviews__num">5 отзывов</a>
+                      </div>
+                      <div class="profile__price doctor__profile">
+                        <a
+                        href=""
+                        class="edit__profile"
+                        >Редактировать профиль</a
+                      >
+                      <p class="price">8 000 <span>₸/час</span></p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__records__block">
+                  <h4 class="records__title">Мои записи</h4>
+                  <div class="records__body appear">
+                    <div class="records__img">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        <path d="M79.1667 43.9346H20.8333C16.231 43.9346 12.5 47.6655 12.5 52.2679V81.4346C12.5 86.0369 16.231 89.7679 20.8333 89.7679H79.1667C83.769 89.7679 87.5 86.0369 87.5 81.4346V52.2679C87.5 47.6655 83.769 43.9346 79.1667 43.9346Z" stroke="#6F7893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M29.166 43.9346V27.2679C29.166 21.7426 31.3609 16.4435 35.268 12.5365C39.175 8.6295 44.474 6.43457 49.9993 6.43457C55.5247 6.43457 60.8237 8.6295 64.7307 12.5365C68.6377 16.4435 70.8327 21.7426 70.8327 27.2679V43.9346" stroke="#6F7893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="records__empty">Оформите подписку</p>
+                    <p class="text">
+                      Чтобы принимать заявки от пациентов активируйте профиль оформив подписку.
+                    </p>
+                    <button class="find__btn subscribe" id="myBtn2">Оформить подписку</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="pacient__profile__subscribe__status">
+            <div class="status__body">
+              <div class="status__item subscribe">
+                <h4 class="status__title">Оформите подписку</h4>
+                <div class="status__img">
+                  <img src="img/pacient__profile/microscope.svg" alt="" />
+                </div>
+                <p class="status__text">
+                  Купите подписку чтобы полноценно использовать весь функционал
+                  сервиса.
+                </p>
+                <button id="myBtn">Оформить подписку</button>
+
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#B9C2CF" />
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                    <form action="" class="modal__subscribe">
+                      <p class="modal__subscribe__title">Оформите подписку</p>
+                      <p class="modal__subscribe__subtitle">
+                        Купите подписку чтобы записаться на консультацию к врачу
+                      </p>
+                      <p class="modal__choose__period">
+                        Выберите период подписки:
+                      </p>
+                      <div class="subscribe__custom_radio">
+                        <label class="radio__container active">
+                          <input type="radio" checked="checked" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <p class="price">8 990₸</p>
+                        </label>
+                        <label class="radio__container">
+                          <p class="recomend">Рекомендуем</p>
+                          <input type="radio" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price blue">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
+                        </label>
+                        <label class="radio__container">
+                          <p class="profitable">Выгодно</p>
+                          <input type="radio" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price red">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="subscribe__gives">
+                        <p class="subscribe__gives__title">
+                          Подписка Вам дает:
+                        </p>
+                        <div class="subscribe__gives__text">
+                          <ul>
+                            <li>Неограниченный доступ специалистам</li>
+                            <li>Неограниченное количество консультации</li>
+                            <li>Круглосуточный доступ к платформе</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="buy__subscribe">Оформить подписку</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovative Medtech</title>
+    <link rel="shortcut icon" href="img/icons/favicon.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f6f6f6">
+    <!-- @import "header__logged__in.html" -->
+
+    <div class="pacient__profile">
+      <div class="container">
+        <div class="pacient__profile__body">
+          <div class="tabs">
+            <div class="tabs__nav">
+              <button class="tabs__nav__btn" type="button" data-tab="#profile">
+                Мой профиль
+              </button>
+              <button class="tabs__nav__btn" type="button" data-tab="#schedule">
+                Расписание
+              </button>
+              <button class="tabs__nav__btn" type="button" data-tab="#padients">
+                Мои пациенты
+              </button>
+              <button class="tabs__nav__btn" type="button" data-tab="#history">
+                История
+              </button>
+              <button
+                class="tabs__nav__btn"
+                type="button"
+                data-tab="#statistic"
+              >
+                Статистика
+              </button>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__item" id="profile">
+                <div class="profile__info__block">
+                  <a href="registration_log_in.html" class="exit">Выйти</a>
+                  <div class="info__block__body">
+                    <div class="info__block__img">
+                      <img src="img/pacient__profile/Avatar.jpg" alt="" />
+                    </div>
+                    <div class="info__block__content doctor__profile">
+                      <h4 class="name">Ralph Edwards</h4>
+
+                      <div class="mail__phone profile__doctor">
+                        <p class="mail doctor">doctor@mail.com</p>
+                        <p class="phone doctor">+7 701 612 80 70</p>
+                      </div>
+                      <div class="star__rate__block doctor">
+                        <div class="star__rates__content">
+                          <img
+                            src="img/icons/pacient__profile/full_star.svg"
+                            alt="rate"
+                            class="star__rates full"
+                          />
+                          <img
+                            src="img/icons/pacient__profile/full_star.svg"
+                            alt="rate"
+                            class="star__rates full"
+                          />
+                          <img
+                            src="img/icons/pacient__profile/full_star.svg"
+                            alt="rate"
+                            class="star__rates full"
+                          />
+                          <img
+                            src="img/icons/pacient__profile/half_star.svg"
+                            alt="rate"
+                            class="star__rates half"
+                          />
+                          <img
+                            src="img/icons/pacient__profile/empty_star.svg"
+                            alt="rate"
+                            class="star__rates empty"
+                          />
+                        </div>
+                        <a href="" class="reviews__num">5 отзывов</a>
+                      </div>
+                      <div class="profile__price doctor__profile">
+                        <a href="" class="edit__profile"
+                          >Редактировать профиль</a
+                        >
+                        <p class="price">8 000 <span>₸/час</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__records__block">
+                  <h4 class="records__title">Мои записи</h4>
+                  <div class="records__body appear">
+                    <div class="records__img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 100 100"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.3335 42.4243H91.6668"
+                          stroke="#6F7893"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M84.0911 91.6672H15.9093C11.7274 91.6672 8.3335 88.2733 8.3335 84.0915V23.4854C8.3335 19.3036 11.7274 15.9097 15.9093 15.9097H84.0911C88.2729 15.9097 91.6668 19.3036 91.6668 23.4854V84.0915C91.6668 88.2733 88.2729 91.6672 84.0911 91.6672Z"
+                          stroke="#6F7893"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M27.2729 8.3335V27.2729"
+                          stroke="#6F7893"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M72.7275 8.3335V27.2729"
+                          stroke="#6F7893"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="records__empty">У вас нет записей</p>
+                    <p class="text">
+                      Здесь появится ваши записи на консультации. Найдите
+                      нужного вам специалиста и оформите запись
+                    </p>
+                    <a class="find__btn" href="">Найти врачей</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__item" id="schedule">schedule</div>
+              <div class="tabs__item" id="padients">
+                <div class="search__doctor">
+                  <div class="search__block">
+                    <form action="" class="info__input">
+                      <label
+                        for="search__input"
+                        class="search__label profile__doctor"
+                      >
+                        <svg
+                          class="loop"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M18 10C18 14.418 14.418 18 10 18C5.582 18 2 14.418 2 10C2 5.582 5.582 2 10 2C14.418 2 18 5.582 18 10Z"
+                            stroke="#6F7893"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M22 22L16 16"
+                            stroke="#6F7893"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <input
+                          required
+                          placeholder="Фамилия или Имя пациента"
+                          id="search__input"
+                          type="text"
+                          class="search__input doctor__profile"
+                      /></label>
+
+                      <button class="find">Найти</button>
+                    </form>
+                    <div class="sort__block">
+                      <div class="rate">
+                        <p>По имени</p>
+                        <img
+                          src="img/icons/pacient__profile/ic_rate.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="price">
+                        <p>По дате</p>
+                        <img
+                          src="img/icons/pacient__profile/ic_rate.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctors__variant doctor__profile">
+                  <div class="doctor__variant__item">
+                    <div class="doctors__info">
+                      <div class="avatar__img">
+                        <img src="img/pacient__profile/Avatar-0.jpg" alt="" />
+                      </div>
+                      <div class="doctor__variant__content">
+                        <div class="doctor__variant__content__body">
+                          <p class="consult__num">консультация №32415</p>
+                          <a href="info__doctor__profile.html" class="name"
+                            >Ralph Edwards</a
+                          >
+                          <p class="work__place">
+                            Клиника: Innovative Medical Technology
+                          </p>
+
+                          <div class="mail__phone profile__doctor">
+                            <p class="mail doctor">doctor@mail.com</p>
+                            <p class="phone doctor">+7 701 612 80 70</p>
+                          </div>
+                        </div>
+                        <div class="service__price">
+                          <p class="text">
+                            8 000
+                            <span>₸/час</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doctor__schedule">
+                      <p class="free__time">Свободное время</p>
+                      <div class="schedule__time">
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doctor__variant__item">
+                    <div class="doctors__info">
+                      <div class="avatar__img">
+                        <img src="img/pacient__profile/Avatar-1.jpg" alt="" />
+                      </div>
+                      <div class="doctor__variant__content">
+                        <div class="doctor__variant__content__body">
+                          <a href="" class="name">Ronald Richards</a>
+                          <p class="speciality">Уролог</p>
+                          <p class="work__place">
+                            Клиника: Innovative Medical Technology
+                          </p>
+                          <div class="star__rate__block">
+                            <a href="" class="reviews__num">128 отзывов</a>
+                            <div class="star__rates__content">
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/half_star.svg"
+                                alt="rate"
+                                class="star__rates half"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/empty_star.svg"
+                                alt="rate"
+                                class="star__rates empty"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="service__price">
+                          <p class="text">
+                            8 000
+                            <span>₸/час</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doctor__schedule">
+                      <p class="free__time">Свободное время</p>
+                      <div class="schedule__time">
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doctor__variant__item">
+                    <div class="doctors__info">
+                      <div class="avatar__img">
+                        <img src="img/pacient__profile/Avatar-2.jpg" alt="" />
+                      </div>
+                      <div class="doctor__variant__content">
+                        <div class="doctor__variant__content__body">
+                          <a href="" class="name">Devon Lane</a>
+                          <p class="speciality">Уролог</p>
+                          <p class="work__place">
+                            Клиника: Innovative Medical Technology
+                          </p>
+                          <div class="star__rate__block">
+                            <a href="" class="reviews__num">128 отзывов</a>
+                            <div class="star__rates__content">
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/half_star.svg"
+                                alt="rate"
+                                class="star__rates half"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/empty_star.svg"
+                                alt="rate"
+                                class="star__rates empty"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="service__price">
+                          <p class="text">
+                            8 000
+                            <span>₸/час</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doctor__schedule">
+                      <p class="free__time">Свободное время</p>
+                      <div class="schedule__time">
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doctor__variant__item">
+                    <div class="doctors__info">
+                      <div class="avatar__img">
+                        <img src="img/pacient__profile/Avatar-3.jpg" alt="" />
+                      </div>
+                      <div class="doctor__variant__content">
+                        <div class="doctor__variant__content__body">
+                          <a href="" class="name">Courtney Henry</a>
+                          <p class="speciality">Уролог</p>
+                          <p class="work__place">
+                            Клиника: Innovative Medical Technology
+                          </p>
+                          <div class="star__rate__block">
+                            <a href="" class="reviews__num">128 отзывов</a>
+                            <div class="star__rates__content">
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/half_star.svg"
+                                alt="rate"
+                                class="star__rates half"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/empty_star.svg"
+                                alt="rate"
+                                class="star__rates empty"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="service__price">
+                          <p class="text">
+                            8 000
+                            <span>₸/час</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doctor__schedule">
+                      <p class="free__time">Свободное время</p>
+                      <div class="schedule__time">
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doctor__variant__item">
+                    <div class="doctors__info">
+                      <div class="avatar__img">
+                        <img src="img/pacient__profile/Avatar-4.jpg" alt="" />
+                      </div>
+                      <div class="doctor__variant__content">
+                        <div class="doctor__variant__content__body">
+                          <a href="" class="name">Darlene Robertson</a>
+                          <p class="speciality">Уролог</p>
+                          <p class="work__place">
+                            Клиника: Innovative Medical Technology
+                          </p>
+                          <div class="star__rate__block">
+                            <a href="" class="reviews__num">128 отзывов</a>
+                            <div class="star__rates__content">
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/full_star.svg"
+                                alt="rate"
+                                class="star__rates full"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/half_star.svg"
+                                alt="rate"
+                                class="star__rates half"
+                              />
+                              <img
+                                src="img/icons/pacient__profile/empty_star.svg"
+                                alt="rate"
+                                class="star__rates empty"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="service__price">
+                          <p class="text">
+                            8 000
+                            <span>₸/час</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doctor__schedule">
+                      <p class="free__time">Свободное время</p>
+                      <div class="schedule__time">
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                        <p class="time__item">16:00</p>
+                        <p class="time__item">09:00</p>
+                        <p class="time__item">12:00</p>
+                        <p class="time__item">14:00</p>
+                        <p class="time__item">16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="download__more__btn">Загрузить еще</button>
+                </div>
+              </div>
+              <div class="tabs__item" id="history">
+                <div class="history__table">
+                  <table class="history">
+                    <thead>
+                      <tr>
+                        <th>№</th>
+                        <th>Дата консультации</th>
+                        <th>Ф.И.О врача</th>
+                        <th>Название консультации</th>
+                        <th>Сумма</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td aria-label="001." class="number"><p>001.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          12 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Константин Константинопольский
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Невропатология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="002." class="number">
+                          <p>002.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          11 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Marvin McKinney
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Хирургия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="003." class="number">
+                          <p>003.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          9 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Theresa Webb
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Психотерапия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="004." class="number"><p>004.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          7 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Savannah Nguyen
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Урология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="005." class="number"><p>005.</p></td>
+                        <td aria-label="Дата консультации" class="data">
+                          14 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Bessie Cooper
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Терапия
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                      <tr>
+                        <td aria-label="006." class="number">
+                          <p>006.</p>
+                        </td>
+                        <td aria-label="Дата консультации" class="data">
+                          3 января 2021
+                        </td>
+                        <td aria-label="Ф.И.О врача" class="name">
+                          Wade Warren
+                        </td>
+                        <td
+                          aria-label="Название консультации"
+                          class="speciality"
+                        >
+                          Невропатология
+                        </td>
+                        <td aria-label="Сумма" class="price">18 200 ₸</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tabs__item" id="statistic">statistic</div>
+            </div>
+          </div>
+          <div class="pacient__profile__subscribe__status">
+            <div class="status__body">
+              <div class="status__item active">
+                <h4 class="status__title">Ваша подписка активна</h4>
+                <div class="status__img">
+                  <img src="img/pacient__profile/microscope.svg" alt="" />
+                </div>
+                <p class="status__text">Активна до: 8 марта 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
