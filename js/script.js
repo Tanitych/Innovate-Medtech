@@ -342,7 +342,4 @@ window.onclick = function (event) {
 }
 
 
-//schedule
-
-
 

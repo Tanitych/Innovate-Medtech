@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovative Medtech</title>
+    <link rel="shortcut icon" href="img/icons/favicon.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f6f6f6">
+    <!-- @import "header__logged__in.html" -->
+
+    <div class="info__doctor__profile">
+      <div class="container">
+        <div class="pacient__profile__body">
+          <div class="info__doctor__content">
+            <div class="info__doctor__head">
+              <a href="javascript:history.back()" class="back__btn"> Назад </a>
+              <h4 class="title">Профиль пациента</h4>
+            </div>
+            <div class="doctor__variant__item my__pacient">
+              <div class="doctors__info appear">
+                <div class="avatar__img appear check_pacient__profile">
+                  <img src="img/pacient__profile/Avatar-0.jpg" alt="" />
+                </div>
+                <div class="doctor__variant__appear">
+                  <h3 class="name check_pacient__profile">Азимханов Ануар</h3>
+                    
+                    <p class="speciality check_pacient__profile">
+                      anuar@mail.com
+                    </p>
+                    <p class="speciality check_pacient__profile">
+                      +7 701 612 80 70
+                    </p>
+                  </h3>
+                </div>
+                <a href="info__pacient__profile.html" class="name"> </a>
+              </div>
+              <a href="info__pacient__profile.html" class="name"> </a>
+            </div>
+           <div class="consults check_pacient__profile">
+          <h3 class="consults__title">Консультации</h3>
+<div class="consults__item">
+  <div class="consults__item__left">
+    <p class="num_of_consult">консультация №32415</p>
+    <p class="consult_date">12 апреля 2021, в 8:00 утра</p>
+  </div>
+  <div class="consults__item__right">
+   
+    <button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close3">&times;</span>
+   <div class="file__upload"></div>
+  </div>
+
+</div>
+<script>
+ var modal3 = document.getElementById("myModal3");
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function () {
+    modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function () {
+    modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+  </script>
+  </div>
+</div>
+           </div>
+          </div>
+          <div class="pacient__profile__subscribe__status">
+            <div class="status__body">
+              <form action="" class="status__item date__record">
+                <p class="date__record__title">Запись к врачу</p>
+                <div class="calendar__content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M2 10.1816H22"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.54492 2V6.54545"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.4551 2V6.54545"
+                      stroke="#6F7893"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="calendar__content__text">
+                    <p class="text__date">Дата записи</p>
+                    <p class="date__info">12 апреля, в 8:00 утра</p>
+                  </div>
+                </div>
+                <div class="record__check">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.1967 11.1364C17.1967 15.1114 13.9747 18.3334 9.9997 18.3334C6.0247 18.3334 2.80273 15.1114 2.80273 11.1364C2.80273 7.16142 6.0247 3.93945 9.9997 3.93945C13.9747 3.93945 17.1967 7.16142 17.1967 11.1364Z"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.96875 11.5149H9.99905V7.72705"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.66602 4.69681L5.45389 1.6665"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.3328 4.69681L14.5449 1.6665"
+                      stroke="#4493F2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p class="check__text">Ваша запись на расмотрений</p>
+                </div>
+                <button class="check__btn">+ Еще одна запись</button>
+              </form>
+              <div class="status__item subscribe">
+                <h4 class="status__title">Оформите подписку</h4>
+                <div class="status__img">
+                  <img src="img/pacient__profile/microscope.svg" alt="" />
+                </div>
+                <p class="status__text">
+                  Купите подписку чтобы полноценно использовать весь функционал
+                  сервиса.
+                </p>
+                <button id="myBtn">Оформить подписку</button>
+
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#B9C2CF"></circle>
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 8L16 16"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 16L16 8"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg
+                    ></span>
+                    <form action="" class="modal__subscribe">
+                      <p class="modal__subscribe__title">Оформите подписку</p>
+                      <p class="modal__subscribe__subtitle">
+                        Купите подписку чтобы записаться на консультацию к врачу
+                      </p>
+                      <p class="modal__choose__period">
+                        Выберите период подписки:
+                      </p>
+                      <div class="subscribe__custom_radio">
+                        <label class="radio__container active">
+                          <input type="radio" checked="checked" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <p class="price">8 990₸</p>
+                        </label>
+                        <label class="radio__container">
+                          <p class="recomend">Рекомендуем</p>
+                          <input type="radio" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price blue">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
+                        </label>
+                        <label class="radio__container">
+                          <p class="profitable">Выгодно</p>
+                          <input type="radio" name="radio" />
+                          <span class="subscribe__checkmark"></span>
+                          <p class="month">1 месяц</p>
+                          <div class="prices">
+                            <p class="new_price red">48 990₸</p>
+                            <p class="old__price">53 990₸</p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="subscribe__gives">
+                        <p class="subscribe__gives__title">
+                          Подписка Вам дает:
+                        </p>
+                        <div class="subscribe__gives__text">
+                          <ul>
+                            <li>Неограниченный доступ специалистам</li>
+                            <li>Неограниченное количество консультации</li>
+                            <li>Круглосуточный доступ к платформе</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button class="buy__subscribe">Оформить подписку</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
