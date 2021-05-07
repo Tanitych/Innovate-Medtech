@@ -5500,8 +5500,25 @@ table.history td:before {
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
+  @media (max-width: 1200px) {
+    padding: 25px 8px 23px 8px;
+  }
+  @media (max-width: 630px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 13px 11px 10px 11px;
+  }
 }
 .consults__item__right {
+  .modal-btn3 {
+    background-color: unset;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4493f2;
+  }
 }
 
 .consults.check_pacient__profile {
@@ -5520,6 +5537,10 @@ table.history td:before {
   .consults__item__left {
     display: flex;
     align-items: center;
+    @media (max-width: 630px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .num_of_consult {
       font-style: normal;
       font-weight: normal;
@@ -5527,6 +5548,7 @@ table.history td:before {
       line-height: 18px;
       margin-right: 8%;
       color: #6f7893;
+      white-space: nowrap;
     }
     .consult_date {
       font-style: normal;
@@ -5536,8 +5558,11 @@ table.history td:before {
       /* identical to box height, or 133% */
 
       /* Primary Black */
-
+      white-space: nowrap;
       color: #3c3f42;
+      @media (max-width: 630px) {
+        margin: 5px 0px;
+      }
     }
   }
 }
@@ -5559,12 +5584,67 @@ table.history td:before {
   }
 
   /* Modal Content */
-  .modal-content {
+  .modal-content3 {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 17px 20px 35px 20px;
     border: 1px solid #888;
     width: 80%;
+    max-width: 450px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    .close_btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+    @media (max-width: 450px) {
+      padding: 15px 13px 22px 13px;
+    }
+  }
+  .modal-content-recipe {
+  }
+  .recipe-block {
+  }
+  .recipe-block-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 8px;
+
+    text-align: center;
+  }
+  .recipe-block-time {
+    .number {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      /* or 133% */
+
+      text-align: center;
+
+      /* Primary Black */
+
+      color: #3c3f42;
+    }
+    .date {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 28px;
+
+      text-align: center;
+
+      /* Primary Black */
+
+      color: #3c3f42;
+      @media (max-width: 420px) {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   /* The close3 Button */
@@ -5580,5 +5660,195 @@ table.history td:before {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+//file upload preview
+
+.file__upload {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(185, 194, 207, 0.4);
+  padding: 0px 0px 3px 0px;
+  @media (max-width: 410px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .appointment_text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #282828;
+    @media (max-width: 420px) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.file__upload__content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  @media (max-width: 420px) {
+    align-items: flex-start;
+  }
+}
+
+.preview__container {
+  width: 100%;
+  max-width: 210px;
+  display: flex;
+  margin-right: 11px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.preview__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .file_img {
+    position: relative;
+  }
+}
+
+.preview__content .img {
+  margin: 0px 4px 7px 3px;
+}
+.preview__content img {
+  max-width: 35px;
+  object-fit: cover;
+}
+.chat-file-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 8px;
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .plus-icon {
+    cursor: pointer;
+    margin-right: 4px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #4493f2;
+  }
+}
+
+.delete_file {
+  max-width: 18px;
+  max-height: 18px;
+  position: absolute;
+  right: -9px;
+  top: -9px;
+  cursor: pointer;
+}
+
+.upload_btn {
+  background: #4493f2;
+  border-radius: 6px;
+  padding: 12px 15px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  transition: all ease 0.3s;
+  width: 100%;
+  margin-top: 23px;
+  &:hover {
+    background: #3b80d5;
+  }
+}
+
+.change-apointment {
+  color: #64b5a6 !important;
+}
+//
+.consults__item__right {
+  .main-content {
+    position: relative;
+    display: block;
+  }
+
+  .container-modal {
+    position: relative;
+    display: block;
+    float: left;
+    .title {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #64b5a6;
+      cursor: pointer;
+    }
+  }
+
+  body.lorem {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .modal.on {
+    display: block;
+  }
+
+  .modal-container {
+    position: relative;
+    top: 10%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 17px 20px 35px 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-container .modal-header {
+    position: relative;
+    display: block;
+  }
+
+  .modal-container .modal-header span.close {
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .modal-container .modal-content {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
   }
 }

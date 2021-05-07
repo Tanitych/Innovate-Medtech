@@ -1,3 +1,5 @@
+
+
 //menu__burger
 $(document).ready(function () {
     $('.header__burger, .header__link').click(function (event) {
@@ -261,6 +263,23 @@ $(function () {
 
 
 });
+//subscribe 
+
+const subBtn = document.querySelectorAll(".radio__container");
+
+subBtn.forEach(
+    function (item) {
+        item.addEventListener("click", function () {
+            let subCurrentBtn = item;
+
+            subBtn.forEach(function (item) {
+                item.classList.remove("active")
+            });
+
+            subCurrentBtn.classList.add("active");
+        });
+    }
+);
 
 //modal
 
@@ -299,23 +318,7 @@ window.onclick = function (event) {
 }
 
 
-//subscribe 
 
-const subBtn = document.querySelectorAll(".radio__container");
-
-subBtn.forEach(
-    function (item) {
-        item.addEventListener("click", function () {
-            let subCurrentBtn = item;
-
-            subBtn.forEach(function (item) {
-                item.classList.remove("active")
-            });
-
-            subCurrentBtn.classList.add("active");
-        });
-    }
-);
 
 
 
@@ -339,7 +342,7 @@ window.onclick = function (event) {
             }
         }
     }
-}
+};
 
 
 

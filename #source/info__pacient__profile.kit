@@ -58,52 +58,287 @@
            <div class="consults check_pacient__profile">
           <h3 class="consults__title">Консультации</h3>
 <div class="consults__item">
-  <div class="consults__item__left">
-    <p class="num_of_consult">консультация №32415</p>
-    <p class="consult_date">12 апреля 2021, в 8:00 утра</p>
-  </div>
-  <div class="consults__item__right">
+      <div class="consults__item__left">
+      <p class="num_of_consult">консультация №32415</p>
+      <p class="consult_date">12 апреля 2021, в 8:00 утра</p>
+      </div>
+    <div class="consults__item__right">
    
-    <button id="myBtn">Open Modal</button>
+    <button class="modal-btn3" id="myBtn">Загрузить назначение</button>
 
-<!-- The Modal -->
-<div id="myModal3" class="modal">
+      <!-- The Modal -->
+    <div id="myModal3" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close3">&times;</span>
-   <div class="file__upload"></div>
+  <div class="modal-content3">
+    <div class="close_btn">   
+      <svg  class="close3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="10" fill="#B9C2CF"/>
+      <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+   
+      <form class="modal-content-recipe" action="">
+        <div class="recipe-block">
+          <h4 class="recipe-block-title">
+          Назначение
+          </h4>
+          <div class="recipe-block-time">
+            <p class="number">консультация №32415</p>
+            <p class="date">12 апреля 2021, в 8:00 утра</p>
+          </div>
+        </div>
+      
+        <div class="file__upload">
+            <p class="appointment_text">
+              Назначение
+            </p>
+          <div class="file__upload__content"> 
+              <div class="chat-item-body">
+              <div class="preview__container">
+         
+               </div>
+              </div>
+            <label class="chat-file-label" for="chat-file">
+        
+              <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+           <path d="M12 4V20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M4 12H20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+               <p class="">Загрузить документы</p><input type="file" name="file[]" multiple="" id="chat-file">
+             </label>
+          </div>
+        </div>
+        <button class="upload_btn">Сохранить </button>
+      </form>
+  
+      </div>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="consults__item">
+  <div class="consults__item__left">
+  <p class="num_of_consult">консультация №32415</p>
+  <p class="consult_date">12 апреля 2021, в 8:00 утра</p>
+  </div>
+<div class="consults__item__right">
+
+<button class="modal-btn3 change-apointment" id="myBtn4">Изменить назначение</button>
+
+  <!-- The Modal -->
+<div id="myModal4" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content3">
+<div class="close_btn">   
+  <svg  class="close3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <circle cx="12" cy="12" r="10" fill="#B9C2CF"/>
+  <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+  <form class="modal-content-recipe" action="">
+    <div class="recipe-block">
+      <h4 class="recipe-block-title">
+      Изменить назначение
+      </h4>
+      <div class="recipe-block-time">
+        <p class="number">консультация №32415</p>
+        <p class="date">12 апреля 2021, в 8:00 утра</p>
+      </div>
+    </div>
+  
+    <div class="file__upload">
+        <p class="appointment_text">
+          Назначение
+        </p>
+      <div class="file__upload__content"> 
+          <div class="chat-item-body">
+          <div class="preview__container">
+     
+           </div>
+          </div>
+        <label class="chat-file-label" for="chat-file">
+    
+          <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+       <path d="M12 4V20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+       <path d="M4 12H20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+           <p class="">Загрузить документы</p><input type="file" name="file[]" multiple="" id="chat-file">
+         </label>
+      </div>
+    </div>
+    <button class="upload_btn">Сохранить </button>
+  </form>
+
+  </div>
+
   </div>
 
 </div>
-<script>
- var modal3 = document.getElementById("myModal3");
-
-// Get the button that opens the modal
-var btn3 = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span3 = document.getElementsByClassName("close3")[0];
-
-// When the user clicks the button, open the modal 
-btn3.onclick = function () {
-    modal3.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span3.onclick = function () {
-    modal3.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal3) {
-        modal3.style.display = "none";
-    }
-}
-  </script>
-  </div>
 </div>
+<div class="consults__item">
+  <div class="consults__item__left">
+  <p class="num_of_consult">консультация №32415</p>
+  <p class="consult_date">12 апреля 2021, в 8:00 утра</p>
+  </div>
+<div class="consults__item__right">
+
+
+  
+
+  <!-- The Modal -->
+  <div class="main-content">
+  
+    <div class="container-modal">
+       <div class="title">
+          Изменить назначение
+      </div>
+      <div class="modal" id="win-0">
+          
+         <div class="modal-container">
+           <div class="modal-header">
+             <div class="close">   
+              <svg class="close3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" fill="#B9C2CF"></circle>
+              <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            </div>
+            <div class="modal-content">
+              <form class="modal-content-recipe" action="">
+                <div class="recipe-block">
+                  <h4 class="recipe-block-title">
+                  Изменить назначение
+                  </h4>
+                  <div class="recipe-block-time">
+                    <p class="number">консультация №32415</p>
+                    <p class="date">12 апреля 2021, в 8:00 утра</p>
+                  </div>
+                </div>
+              
+                <div class="file__upload">
+                    <p class="appointment_text">
+                      Назначение
+                    </p>
+                  <div class="file__upload__content"> 
+                      <div class="chat-item-body">
+                      <div class="preview__container">
+                 
+                       </div>
+                      </div>
+                    <label class="chat-file-label" for="chat-file">
+                
+                      <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                   <path d="M12 4V20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                   <path d="M4 12H20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                       <p class="">Загрузить документы</p><input type="file" name="file[]" multiple="" id="chat-file">
+                     </label>
+                  </div>
+                </div>
+                <button class="upload_btn">Сохранить </button>
+              </form>
+            </div>
+         </div>
+        </div>
+    </div>
+    
+    
+    
+  </div>
+
+</div>
+</div>
+<div class="consults__item">
+  <div class="consults__item__left">
+  <p class="num_of_consult">консультация №32415</p>
+  <p class="consult_date">12 апреля 2021, в 8:00 утра</p>
+  </div>
+<div class="consults__item__right">
+
+
+  
+
+  <!-- The Modal -->
+  <div class="main-content">
+  
+    <div class="container-modal">
+       <div class="title">
+          Изменить назначение
+      </div>
+      <div class="modal" id="win-1">
+          
+         <div class="modal-container">
+           <div class="modal-header">
+             <div class="close">   
+              <svg class="close3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" fill="#B9C2CF"></circle>
+              <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 8L16 16" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 16L16 8" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            </div>
+            <div class="modal-content">
+              <form class="modal-content-recipe" action="">
+                <div class="recipe-block">
+                  <h4 class="recipe-block-title">
+                  Изменить назначение
+                  </h4>
+                  <div class="recipe-block-time">
+                    <p class="number">консультация №32415</p>
+                    <p class="date">12 апреля 2021, в 8:00 утра</p>
+                  </div>
+                </div>
+              
+                <div class="file__upload">
+                    <p class="appointment_text">
+                      Назначение
+                    </p>
+                  <div class="file__upload__content"> 
+                      <div class="chat-item-body">
+                      <div class="preview__container">
+                 
+                       </div>
+                      </div>
+                    <label class="chat-file-label" for="chat-file">
+                
+                      <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                   <path d="M12 4V20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                   <path d="M4 12H20" stroke="#4493F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                       <p class="">Загрузить документы</p><input type="file" name="file[]" multiple="" id="chat-file">
+                     </label>
+                  </div>
+                </div>
+                <button class="upload_btn">Сохранить </button>
+              </form>
+            </div>
+         </div>
+        </div>
+    </div>
+    
+    
+    
+  </div>
+
+</div>
+</div>
+            
            </div>
           </div>
           <div class="pacient__profile__subscribe__status">
@@ -197,110 +432,7 @@ window.onclick = function (event) {
                 </div>
                 <button class="check__btn">+ Еще одна запись</button>
               </form>
-              <div class="status__item subscribe">
-                <h4 class="status__title">Оформите подписку</h4>
-                <div class="status__img">
-                  <img src="img/pacient__profile/microscope.svg" alt="" />
-                </div>
-                <p class="status__text">
-                  Купите подписку чтобы полноценно использовать весь функционал
-                  сервиса.
-                </p>
-                <button id="myBtn">Оформить подписку</button>
-
-                <div id="myModal" class="modal">
-                  <div class="modal-content">
-                    <span class="close"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <circle cx="12" cy="12" r="10" fill="#B9C2CF"></circle>
-                        <path
-                          d="M8 8L16 16"
-                          stroke="white"
-                          stroke-width="1.2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M8 16L16 8"
-                          stroke="white"
-                          stroke-width="1.2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M8 8L16 16"
-                          stroke="white"
-                          stroke-width="1.2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path>
-                        <path
-                          d="M8 16L16 8"
-                          stroke="white"
-                          stroke-width="1.2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></path></svg
-                    ></span>
-                    <form action="" class="modal__subscribe">
-                      <p class="modal__subscribe__title">Оформите подписку</p>
-                      <p class="modal__subscribe__subtitle">
-                        Купите подписку чтобы записаться на консультацию к врачу
-                      </p>
-                      <p class="modal__choose__period">
-                        Выберите период подписки:
-                      </p>
-                      <div class="subscribe__custom_radio">
-                        <label class="radio__container active">
-                          <input type="radio" checked="checked" name="radio" />
-                          <span class="subscribe__checkmark"></span>
-                          <p class="month">1 месяц</p>
-                          <p class="price">8 990₸</p>
-                        </label>
-                        <label class="radio__container">
-                          <p class="recomend">Рекомендуем</p>
-                          <input type="radio" name="radio" />
-                          <span class="subscribe__checkmark"></span>
-                          <p class="month">1 месяц</p>
-                          <div class="prices">
-                            <p class="new_price blue">48 990₸</p>
-                            <p class="old__price">53 990₸</p>
-                          </div>
-                        </label>
-                        <label class="radio__container">
-                          <p class="profitable">Выгодно</p>
-                          <input type="radio" name="radio" />
-                          <span class="subscribe__checkmark"></span>
-                          <p class="month">1 месяц</p>
-                          <div class="prices">
-                            <p class="new_price red">48 990₸</p>
-                            <p class="old__price">53 990₸</p>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="subscribe__gives">
-                        <p class="subscribe__gives__title">
-                          Подписка Вам дает:
-                        </p>
-                        <div class="subscribe__gives__text">
-                          <ul>
-                            <li>Неограниченный доступ специалистам</li>
-                            <li>Неограниченное количество консультации</li>
-                            <li>Круглосуточный доступ к платформе</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <button class="buy__subscribe">Оформить подписку</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -308,8 +440,9 @@ window.onclick = function (event) {
     </div>
 
     <!-- @import "footer.html" -->
-
+   
     <script src="js/jq/jquery.js"></script>
+    <script src="js/file-preview-script.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
