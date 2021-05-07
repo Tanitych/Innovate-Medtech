@@ -79,12 +79,17 @@
             <form action="" class="about__you">
               <label for="about" class="custom__placeholder_doctor about__your">
                 <p class="placeholder__text">Расскажите о себе</p>
-                <textarea class="input__about" name="" id="about"></textarea>
+                <textarea
+                  required
+                  class="input__about"
+                  name=""
+                  id="about"
+                ></textarea>
               </label>
               <div class="bottom__inputs">
                 <label for="about" class="custom__placeholder_doctor">
                   <p class="placeholder__text">Укажите место работы</p>
-                  <textarea name="" id="about"></textarea>
+                  <textarea name="" id="about" required></textarea>
                 </label>
                 <div class="select__block doctor__profile">
                   <div class="custom-select-wrapper">
@@ -128,10 +133,11 @@
                   class="custom__placeholder cost doctor__pofile"
                 >
                   <p class="placeholder__text">Стоимость консультации</p>
+                  <p class="currency">₸</p>
                   <input
                     id="cost"
                     class="custom__cost"
-                    required=""
+                    required
                     type="number"
                   />
                 </label>

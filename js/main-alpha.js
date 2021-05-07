@@ -2,7 +2,7 @@ var $ = jQuery.noConflict();
 
 $(document).ready(function () {
     $('.timepicker').timepicker({
-        timeFormat: 'HH:mm',
+        timeFormat: 'H:mm',
         interval: 60,
         defaultTime: '8',
         startTime: '8:00',

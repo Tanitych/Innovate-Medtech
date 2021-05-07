@@ -10,28 +10,20 @@ $(document).ready(function () {
 
 
 //chart
+
 $(function () {
-
-    /////////////////////////////////////Рисуем график
     var arr = ['02 мая - 08 мая', 'Консультации', [0, 22, 8, 21, 14, 20, 0],];
-
-    /////////////////////////////////////////////////////////
     function plotDraw(a, b, c) {
-
         $('#container').empty();
 
-        var title = { text: 'Грффик статистики' };
+        var title = { text: 'График статистики' };
         var subtitle = { text: 'Неделя ' + a };
-
-        var xAxis = { categories: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'] };
-
+        var xAxis = { categories: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'] };
         var yAxis = {
             title: { text: 'Количество пациентов' },
             plotLines: [{ value: 0, width: 1, color: '#808080' }]
         };
-
         var tooltip = { valueSuffix: ' чел.' };
-
         var legend =
         {
             // layout: 'vertical',
@@ -39,13 +31,11 @@ $(function () {
             // verticalAlign: 'middle',
             // borderWidth: 0
         };
-
         var series = [{
             name: b,
             data: c //[-0.1,0.6,4.2,	11.7,17.0,20.9,	 23.4,22.8,17.9,	11.5,6.7,2.6]
             //
         }];
-
         //Показываем график		   
         var json = {};
         json.title = title;
@@ -55,17 +45,106 @@ $(function () {
         json.tooltip = tooltip;
         json.legend = legend;
         json.series = series;
-
         $('#container').highcharts(json);
-
     }
-    /////////////////////////////////////////////////////////
-
     plotDraw(arr[0], arr[1], arr[2])
+});
 
-})
+$(function () {
+    var arr = ['09 мая - 15 мая', 'Консультации', [0, 12, 3, 21, 5, 20, 0],];
+    function plotDraw(a, b, c) {
+        $('#container2').empty();
+
+        var title = { text: 'График статистики' };
+        var subtitle = { text: 'Неделя ' + a };
+        var xAxis = { categories: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'] };
+        var yAxis = {
+            title: { text: 'Количество пациентов' },
+            plotLines: [{ value: 0, width: 1, color: '#808080' }]
+        };
+        var tooltip = { valueSuffix: ' чел.' };
+        var legend =
+        {
+            // layout: 'vertical',
+            // align: 'right',
+            // verticalAlign: 'middle',
+            // borderWidth: 0
+        };
+        var series = [{
+            name: b,
+            data: c //[-0.1,0.6,4.2,	11.7,17.0,20.9,	 23.4,22.8,17.9,	11.5,6.7,2.6]
+            //
+        }];
+        //Показываем график		   
+        var json = {};
+        json.title = title;
+        json.subtitle = subtitle;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.tooltip = tooltip;
+        json.legend = legend;
+        json.series = series;
+        $('#container2').highcharts(json);
+    }
+    plotDraw(arr[0], arr[1], arr[2])
+});
+
+$(function () {
+    var arr = ['16 мая - 22 мая', 'Консультации', [1, 30, 8, 2, 14, 10, 0],];
+    function plotDraw(a, b, c) {
+        $('#container3').empty();
+
+        var title = { text: 'График статистики' };
+        var subtitle = { text: 'Неделя ' + a };
+        var xAxis = { categories: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'] };
+        var yAxis = {
+            title: { text: 'Количество пациентов' },
+            plotLines: [{ value: 0, width: 1, color: '#808080' }]
+        };
+        var tooltip = { valueSuffix: ' чел.' };
+        var legend =
+        {
+            // layout: 'vertical',
+            // align: 'right',
+            // verticalAlign: 'middle',
+            // borderWidth: 0
+        };
+        var series = [{
+            name: b,
+            data: c //[-0.1,0.6,4.2,	11.7,17.0,20.9,	 23.4,22.8,17.9,	11.5,6.7,2.6]
+            //
+        }];
+        //Показываем график		   
+        var json = {};
+        json.title = title;
+        json.subtitle = subtitle;
+        json.xAxis = xAxis;
+        json.yAxis = yAxis;
+        json.tooltip = tooltip;
+        json.legend = legend;
+        json.series = series;
+        $('#container3').highcharts(json);
+    }
+    plotDraw(arr[0], arr[1], arr[2])
+});
 
 
+//graph__slider
+
+
+
+$(document).ready(function () {
+    $('.slider').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        autoplay: false,
+        fade: true,
+        speed: 400,
+        autoplaySpeed: 800,
+
+    });
+});
 
 //swiper__slider
 const first__swipper = new Swiper('.first__swipper', {
@@ -175,6 +254,8 @@ const news__slider = new Swiper('.news__slider', {
 });
 
 
+
+
 //show password
 
 function show_hide_password(target) {
@@ -246,7 +327,7 @@ tabsBtn.forEach(function (item) {
     });
 });
 
-document.querySelector('.tabs__nav__btn:nth-child(1)').click();
+document.querySelector('.tabs__nav__btn:nth-child(5)').click();
 
 //star rate
 
