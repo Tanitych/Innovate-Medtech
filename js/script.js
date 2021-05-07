@@ -327,7 +327,7 @@ tabsBtn.forEach(function (item) {
     });
 });
 
-document.querySelector('.tabs__nav__btn:nth-child(5)').click();
+document.querySelector('.tabs__nav__btn:nth-child(1)').click();
 
 //star rate
 
@@ -426,4 +426,8 @@ window.onclick = function (event) {
 };
 
 
+
+
+//schedule
+// Full options
 

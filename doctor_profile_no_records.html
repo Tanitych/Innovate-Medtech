@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.schedule.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #f6f6f6">
@@ -335,7 +336,7 @@
               <button class="tabs__nav__btn" type="button" data-tab="#profile">
                 Мой профиль
               </button>
-              <button class="tabs__nav__btn" type="button" data-tab="#schedule">
+              <button class="tabs__nav__btn" type="button" data-tab="#schedulebtn">
                 Расписание
               </button>
               <button class="tabs__nav__btn" type="button" data-tab="#padients">
@@ -458,8 +459,13 @@
                   </div>
                 </div>
               </div>
-              <div class="tabs__item schedule" id="schedule">
-<div class="schedule_block">dsa</div>
+              <div class="tabs__item schedule-content" id="schedulebtn">
+              <div class="schedule_block">
+                <div class="schedule_block_date">
+                  <p class="">10 мая - 17 мая</p>
+                </div>
+                <div id="schedule" class="jqs-demo mb-3"></div>
+              </div>
 
               </div>
               <div class="tabs__item" id="padients">
@@ -838,12 +844,46 @@
   </div>
 </footer>
 
-
+    
     <script src="js/jq/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
     <script src="js/highcharts.js"></script>
+    <script src="js/jquery.schedule.js"></script>
     <script src="js/script.js"></script>
+    <script>
+    // Full options
+$('#schedule').jqs({
+  mode: 'edit',
+  hour: 24,
+  days: 7,
+  periodDuration: 30,
+  data: [],
+  periodOptions: true,
+  periodColors: [],
+  periodTitle: '',
+  periodBackgroundColor: 'rgba(82, 155, 255, 0.5)',
+  periodBorderColor: '#2a3cff',
+  periodTextColor: '#000',
+  periodRemoveButton: 'Remove',
+  periodDuplicateButton: 'Duplicate',
+  periodTitlePlaceholder: 'Title',
+  daysList: [
+    'Понедельник',
+    'Вторник',
+    'Среда',
+    'Четверг',
+    'Пятница',
+    'Суббота',
+    'Воскресенье'
+  ],
+  onInit: function () {},
+  onAddPeriod: function () {},
+  onRemovePeriod: function () {},
+  onDuplicatePeriod: function () {},
+  onClickPeriod: function () {}
+});
+    </script>
   </body>
 </html>

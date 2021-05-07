@@ -121,7 +121,7 @@ h6 {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 1050;
   padding: 10px 10px;
   @media (max-width: 500px) {
     padding: 10px 6px;
@@ -4773,7 +4773,7 @@ table.history td:before {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 50; /* Sit on top */
+    z-index: 1051; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -6112,7 +6112,7 @@ table.history td:before {
     position: absolute;
     top: 16%;
     margin: -30px 0px 0px 0px;
-    z-index: 46;
+    z-index: 1001;
     font-size: 0;
     width: 30px;
     height: 60px;
@@ -6146,7 +6146,6 @@ table.history td:before {
   .slider__item {
     padding: 0px 5px;
     outline: none;
-    z-index: 45 !important;
   }
   .slider__item img {
     max-width: 100%;
@@ -6176,4 +6175,26 @@ table.history td:before {
     background-color: transparent;
     border: 1px solid #fff;
   }
+}
+.jqs {
+  scrollbar-color: #4493f2 #f6f6f6; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    background-color: #f6f6f6;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #4493f2;
+    border-radius: 2px;
+  }
+}
+
+.schedule_block_date {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3c3f42;
 }
