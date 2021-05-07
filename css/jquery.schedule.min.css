@@ -25,7 +25,11 @@
   max-height: 800px;
   box-sizing: border-box;
 }
-
+@media (max-width: 768px) {
+  .jqs {
+    padding: 40px 20px 20px 45px;
+  }
+}
 .jqs-mode-edit .jqs-period {
   cursor: pointer;
 }
@@ -77,10 +81,9 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  /* identical to box height, or 133% */
-
+  overflow: hidden;
+  margin-right: 5px;
   text-align: center;
-
   color: #3c3f42;
 }
 /* .jqs-grid-day:hover .jqs-day-remove, */
@@ -117,6 +120,12 @@
   width: 42px;
   font-size: 14px;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .jqs-grid-hour {
+    left: -51px;
+  }
 }
 .jqs-day {
   width: 100%;

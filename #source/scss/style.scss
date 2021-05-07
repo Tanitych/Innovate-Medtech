@@ -5594,7 +5594,7 @@ table.history td:before {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 55; /* Sit on top */
+    z-index: 1055; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -6197,4 +6197,14 @@ table.history td:before {
   font-size: 24px;
   line-height: 32px;
   color: #3c3f42;
+}
+.jqs-grid {
+  @media (max-width: 768px) {
+    left: 47px;
+  }
+}
+.jqs-period-time {
+  @media (max-width: 700px) {
+    font-size: 0;
+  }
 }
