@@ -2519,7 +2519,7 @@ footer {
 .status__item {
   position: relative;
   border-radius: 6px;
-  padding: 24px 16px 16px 16px;
+  padding: 24px 16px 20px 16px;
   max-width: 343px;
   width: 100%;
   margin-bottom: 30px;
@@ -5180,6 +5180,7 @@ table.history td:before {
     .record__check {
       display: flex;
       align-items: center;
+      margin-bottom: 10px;
       .check__text {
         font-weight: normal;
         font-size: 14px;
@@ -5210,7 +5211,7 @@ table.history td:before {
 
     color: #dd769b;
     &:hover {
-      background-color: #fdfdfd;
+      background-color: #f3f2f2;
     }
   }
 }
@@ -5706,6 +5707,10 @@ table.history td:before {
   @media (max-width: 420px) {
     align-items: flex-start;
   }
+  &.uploaded {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .preview__container {
@@ -5781,6 +5786,18 @@ table.history td:before {
   &:hover {
     background: #3b80d5;
   }
+  &.save {
+    background: rgba(185, 194, 207, 0.4);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #6f7893;
+    &:hover {
+      background: rgba(161, 168, 181, 0.4);
+    }
+  }
 }
 
 .change-apointment {
@@ -5805,6 +5822,9 @@ table.history td:before {
 
       color: #64b5a6;
       cursor: pointer;
+      &.load-recipe {
+        color: #4493f2;
+      }
     }
   }
 
@@ -5964,7 +5984,93 @@ table.history td:before {
   border-bottom: 1px solid rgba(185, 194, 207, 0.4);
 }
 .status__item_container {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(185, 194, 207, 0.4);
+}
+
+.notes_create {
+  .notes_create_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    color: #6f7893;
+  }
+}
+.status__item.notes {
+  .date__record__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3c3f42;
+    margin-bottom: 8px;
+  }
+  .notes_ready_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3c3f42;
+    margin-bottom: 15px;
+  }
+}
+
+.status__body {
+  .status__item {
+    background: #ffffff;
+    border-radius: 6px;
+  }
+}
+
+.notes-label {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid rgba(185, 194, 207, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  min-height: 130px;
+  .notes-textarea {
+    position: absolute;
+    display: block;
+    resize: none;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px 12px 15px 12px;
+    color: #3c3f42;
+    top: 24px;
+    left: 0;
+    scrollbar-color: #ececec #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin; /* толщина */
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 5px;
+      background-color: #ffffff;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ececec;
+    }
+  }
+  .notes-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6f7893;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    padding: 0px 0px 7px 0px;
+    background-color: #ffffff;
+  }
 }
