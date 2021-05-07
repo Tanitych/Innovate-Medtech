@@ -695,6 +695,7 @@ h6 {
     line-height: 110%;
     color: #3c3f42;
     margin-bottom: 20px;
+    display: block;
     @media (max-width: 768px) {
       font-size: 44px;
       margin-bottom: 10px;
@@ -1641,7 +1642,7 @@ footer {
       color: #6f7893;
       width: 100%;
       padding-top: 6px;
-      padding-bottom: 3px;
+      padding-bottom: 4px;
     }
     input {
       border: none;
@@ -2521,7 +2522,7 @@ footer {
   padding: 24px 16px 16px 16px;
   max-width: 343px;
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   &.subscribe {
     background: #e1f3f8;
   }
@@ -3756,7 +3757,7 @@ table.history td:before {
       display: -ms-flexbox;
       display: flex;
       color: #3c3f42;
-      padding: 14px 51px 14px 10px;
+      padding: 14px 31px 14px 10px;
       width: 100%;
       transition: all ease 0.2s;
       height: 56px;
@@ -3844,6 +3845,9 @@ table.history td:before {
 
 .consultations__right {
   margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media (max-width: 450px) {
     margin-left: 0px;
     padding-top: 7px;
@@ -5183,10 +5187,13 @@ table.history td:before {
         margin-left: 5px;
 
         color: #4493f2;
+        &.submited {
+          color: #64b5a6;
+        }
+        &.canceled {
+          color: #dd769b;
+        }
       }
-      padding-bottom: 16px;
-      border-bottom: 1px solid rgba(185, 194, 207, 0.4);
-      margin-bottom: 15px;
     }
   }
   .check__btn {
@@ -5342,7 +5349,7 @@ table.history td:before {
   &.about__your {
     height: 112px;
     .input__about {
-      height: 1 00%;
+      height: 100%;
     }
   }
   .placeholder__text {
@@ -5356,10 +5363,10 @@ table.history td:before {
     color: #6f7893;
     width: 100%;
     padding-top: 6px;
-    padding-bottom: 3px;
+    padding-bottom: 7px;
     background-color: #ffffff;
     width: 100%;
-    height: 26px;
+    height: 31px;
   }
   textarea {
     resize: none;
@@ -5372,7 +5379,7 @@ table.history td:before {
     scrollbar-color: #ffffff #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
     scrollbar-width: thin; /* толщина */
     height: 52px;
-    overflow: hidden;
+    overflow: scroll;
     &::-webkit-scrollbar {
       width: 3px;
       height: 5px;
@@ -5455,6 +5462,10 @@ table.history td:before {
   padding: 12px 18px;
   width: unset;
   margin-top: 20px;
+  transition: all ease 0.3s;
+  &:hover {
+    background: rgba(155, 163, 174, 0.4);
+  }
   @media (max-width: 650px) {
     width: 100%;
   }
@@ -5851,4 +5862,109 @@ table.history td:before {
     display: block;
     background-color: #ffffff;
   }
+}
+
+.module_data_input {
+  background: #ffffff;
+  border: 2px solid rgba(185, 194, 207, 0.4);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  padding: 0px 12px;
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.module_data_input .inner_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.module_data_input .inner_box .title {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6f7893;
+  pointer-events: none;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+}
+
+.module_data_input .inner_box input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3c3f42;
+  padding: 18px 0px 0px 0px;
+}
+
+.module_data_input .arrow {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  pointer-events: none;
+}
+
+.ui-timepicker-container.ui-timepicker-standard {
+  border-radius: 4px;
+  border: 2px solid rgba(185, 194, 207, 0.4);
+  padding: 2px 0px;
+}
+.ui-timepicker-standard .ui-state-hover {
+  border: 2px solid rgba(185, 194, 207, 0.4);
+}
+
+.ui-timepicker-viewport {
+  scrollbar-color: #aeaeae #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    background-color: #ffffff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #aeaeae;
+  }
+}
+
+.make__a__singing__btn {
+  background: #dd769b !important;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5px;
+  &:hover {
+    background: #c16587 !important;
+  }
+}
+
+.status__item.make__a__singing {
+  background: #ffffff;
+  border-radius: 6px;
+}
+.more-record-form {
+  padding: 0px 0px 15px 0px;
+  margin: 10px 0px 15px 0px;
+  border-bottom: 1px solid rgba(185, 194, 207, 0.4);
+}
+.status__item_container {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(185, 194, 207, 0.4);
 }

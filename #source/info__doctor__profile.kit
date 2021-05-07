@@ -21,6 +21,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
     />
+
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #f6f6f6">
@@ -145,7 +148,7 @@
                         data-tab="#review"
                         class="review__request tabs__nav__btn"
                       >
-                        Оставить отзыв
+                        Посмотреть отзыв
                       </button>
                     </div>
                   </div>
@@ -284,6 +287,277 @@
           <div class="pacient__profile__subscribe__status">
             <div class="status__body">
               <form action="" class="status__item date__record">
+                <div class="status__item_container">
+                  <p class="date__record__title">Запись к врачу</p>
+                  <div class="calendar__content">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 10.1816H22"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.54492 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.4551 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="calendar__content__text">
+                      <p class="text__date">Дата записи</p>
+                      <p class="date__info">12 апреля, в 8:00 утра</p>
+                    </div>
+                  </div>
+                  <div class="record__check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.1967 11.1364C17.1967 15.1114 13.9747 18.3334 9.9997 18.3334C6.0247 18.3334 2.80273 15.1114 2.80273 11.1364C2.80273 7.16142 6.0247 3.93945 9.9997 3.93945C13.9747 3.93945 17.1967 7.16142 17.1967 11.1364Z"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.96875 11.5149H9.99905V7.72705"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.66602 4.69681L5.45389 1.6665"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.3328 4.69681L14.5449 1.6665"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="check__text">Ваша запись на расмотрении</p>
+                  </div>
+                </div>
+
+                <button class="check__btn">+ Еще одна запись</button>
+              </form>
+              <form action="" class="status__item date__record">
+                <div class="status__item_container">
+                  <p class="date__record__title">Запись к врачу</p>
+                  <div class="calendar__content">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 10.1816H22"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.54492 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.4551 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="calendar__content__text">
+                      <p class="text__date">Дата записи</p>
+                      <p class="date__info">12 апреля, в 8:00 утра</p>
+                    </div>
+                  </div>
+                  <div class="record__check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.1967 11.1364C17.1967 15.1114 13.9747 18.3334 9.9997 18.3334C6.0247 18.3334 2.80273 15.1114 2.80273 11.1364C2.80273 7.16142 6.0247 3.93945 9.9997 3.93945C13.9747 3.93945 17.1967 7.16142 17.1967 11.1364Z"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.96875 11.5149H9.99905V7.72705"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.66602 4.69681L5.45389 1.6665"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.3328 4.69681L14.5449 1.6665"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="check__text">Ваша запись на расмотрении</p>
+                  </div>
+                </div>
+                <div class="status__item_container">
+                  <p class="date__record__title">Запись к врачу</p>
+                  <div class="calendar__content">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 10.1816H22"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.54492 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.4551 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="calendar__content__text">
+                      <p class="text__date">Дата записи</p>
+                      <p class="date__info">12 апреля, в 8:00 утра</p>
+                    </div>
+                  </div>
+                  <div class="record__check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.1967 11.1364C17.1967 15.1114 13.9747 18.3334 9.9997 18.3334C6.0247 18.3334 2.80273 15.1114 2.80273 11.1364C2.80273 7.16142 6.0247 3.93945 9.9997 3.93945C13.9747 3.93945 17.1967 7.16142 17.1967 11.1364Z"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.96875 11.5149H9.99905V7.72705"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.66602 4.69681L5.45389 1.6665"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.3328 4.69681L14.5449 1.6665"
+                        stroke="#4493F2"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="check__text">Ваша запись на расмотрении</p>
+                  </div>
+                </div>
+                <button class="check__btn">+ Еще одна запись</button>
+              </form>
+              <div class="status__item date__record more">
                 <p class="date__record__title">Запись к врачу</p>
                 <div class="calendar__content">
                   <svg
@@ -368,10 +642,257 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <p class="check__text">Ваша запись на расмотрений</p>
+                  <p class="check__text">Ваша запись на расмотрении</p>
                 </div>
+                <form class="more-record-form" action="">
+                  <main class="content__inputs">
+                    <div class="module_data_input">
+                      <div class="inner_box">
+                        <div class="title">Дата записи</div>
+                        <input
+                          readonly=""
+                          type="text"
+                          value="12 Апреля 2021"
+                          class="datepicker-here"
+                          data-date-format="d MM yyyy"
+                          required=""
+                        />
+                      </div>
+                      <div class="arrow">
+                        <img src="img/arrow_input.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="module_data_input">
+                      <div class="inner_box">
+                        <div class="title">Укажите время записи</div>
+                        <input
+                          readonly=""
+                          type="text"
+                          value="8:00"
+                          class="timepicker"
+                          required=""
+                        />
+                      </div>
+                      <div class="arrow">
+                        <img src="img/arrow_input.svg" alt="" />
+                      </div>
+                    </div>
+                  </main>
+                  <button class="make__a__singing__btn">Записаться</button>
+                </form>
+
+                <button class="check__btn">+ Еще одна запись</button>
+              </div>
+
+              <form action="" class="status__item date__record record_submited">
+                <div class="status__item_container">
+                  <p class="date__record__title">Запись к врачу</p>
+                  <div class="calendar__content">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 10.1816H22"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.54492 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.4551 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="calendar__content__text">
+                      <p class="text__date">Дата записи</p>
+                      <p class="date__info">12 апреля, в 8:00 утра</p>
+                    </div>
+                  </div>
+                  <div class="record__check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <circle
+                        cx="10.0007"
+                        cy="10.0002"
+                        r="9.16667"
+                        stroke="#64B5A6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.66602 11.3095L9.52316 13.2143L13.3327 7.5"
+                        stroke="#64B5A6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="check__text submited">Ваша запись подтверждена</p>
+                  </div>
+                </div>
+
                 <button class="check__btn">+ Еще одна запись</button>
               </form>
+              <form action="" class="status__item date__record record_canceled">
+                <div class="status__item_container">
+                  <p class="date__record__title">Запись к врачу</p>
+                  <div class="calendar__content">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M2 10.1816H22"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.1818 22.0002H3.81818C2.81455 22.0002 2 21.1856 2 20.182V5.63654C2 4.6329 2.81455 3.81836 3.81818 3.81836H20.1818C21.1855 3.81836 22 4.6329 22 5.63654V20.182C22 21.1856 21.1855 22.0002 20.1818 22.0002Z"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.54492 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.4551 2V6.54545"
+                        stroke="#6F7893"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <div class="calendar__content__text">
+                      <p class="text__date">Дата записи</p>
+                      <p class="date__info">12 апреля, в 8:00 утра</p>
+                    </div>
+                  </div>
+                  <div class="record__check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <circle
+                        cx="9.99935"
+                        cy="9.99984"
+                        r="8.33333"
+                        fill="#DD769B"
+                      />
+                      <path
+                        d="M6.66602 6.6665L13.3327 13.3332"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.66602 13.3332L13.3327 6.6665"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.66602 6.6665L13.3327 13.3332"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.66602 13.3332L13.3327 6.6665"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="check__text canceled">Ваша запись отменена</p>
+                  </div>
+                </div>
+
+                <button class="check__btn">+ Еще одна запись</button>
+              </form>
+              <form class="status__item make__a__singing">
+                <main class="content__inputs">
+                  <div class="module_data_input">
+                    <div class="inner_box">
+                      <div class="title">Дата записи</div>
+                      <input
+                        readonly
+                        type="text"
+                        value="12 Апреля 2021"
+                        class="datepicker-here"
+                        data-date-format="d MM yyyy"
+                        required
+                      />
+                    </div>
+                    <div class="arrow">
+                      <img src="img/arrow_input.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="module_data_input">
+                    <div class="inner_box">
+                      <div class="title">Укажите время записи</div>
+                      <input
+                        readonly
+                        type="text"
+                        value="8:00"
+                        class="timepicker"
+                        required
+                      />
+                    </div>
+                    <div class="arrow">
+                      <img src="img/arrow_input.svg" alt="" />
+                    </div>
+                  </div>
+                </main>
+                <button class="make__a__singing__btn">Записаться</button>
+              </form>
+
               <div class="status__item subscribe">
                 <h4 class="status__title">Оформите подписку</h4>
                 <div class="status__img">
@@ -488,6 +1009,9 @@
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/main-alpha.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/datepicker.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
